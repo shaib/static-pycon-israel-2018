@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en"  >
+    <head>
+        <meta charset="utf-8" />
+        <title>PyCon Israel | Shay Palachy</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+
+        
+    <link href="/2018/static/css/app.cf2a3cb107eb.css" rel="stylesheet" />
+
+
+        
+            <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <![endif]-->
+        
+
+        
+    <link rel="shortcut icon" href="/2018/static/images/favicon.876a1d7f017e.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2018/static/images/favicon-32x32.d1eb23190eb7.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2018/static/images/favicon-96x96.51ad1038f893.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2018/static/images/favicon-16x16.0c37aa64b2ca.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    
+
+    </head>
+    <body class="" id="" >
+        
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=171131396875691&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+  <header id="main-header">
+    <div id="header-extra"></div>
+    <h1 id="logo"><a href="/2018/en/">PyCon Israel 2018</a></h1>
+
+    <nav class="navbar navbar-expand-md navbar-topbar navbar-dark">
+      <div class="container">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav mr-auto">
+            
+            
+
+
+    <li class="nav-item  ">
+        <a href="/2018/en/" class="nav-link "  role="button">Home</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/blog/" class="nav-link "  role="button">Blog</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/code-of-conduct/" class="nav-link "  role="button">Code of Conduct</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/schedule/" class="nav-link "  role="button">Schedule</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/venue/" class="nav-link "  role="button">Venue</a>
+        
+    </li>
+
+
+            
+            
+          </ul>
+          
+          
+
+
+
+<ul class="navbar-nav">
+    
+        <li class="nav-item"><a class="nav-link" href="/2018/account/login/">Log in</a></li>
+        
+    
+</ul>
+
+<form id="accountLogOutForm" style="display: none;" action="/2018/account/logout/" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='yk4WFSl31KyDQFw4j62JmTsh5i0Cd28MFgrZdj4NNRTqzQedQmzZYnx0pxV4TpYc' />
+</form>
+
+          
+
+<form action="/2018/i18n/setlang/" method="post" class="navbar-nav"><input type='hidden' name='csrfmiddlewaretoken' value='yk4WFSl31KyDQFw4j62JmTsh5i0Cd28MFgrZdj4NNRTqzQedQmzZYnx0pxV4TpYc' />
+    
+    
+    
+    
+    
+      
+    
+      
+       <button name="language" value="he">עברית</button>
+      
+    
+</form>
+
+        </div>
+        
+      </div>
+    </nav>
+
+  </header>
+
+
+
+        
+    <main class="container">
+        <div id="content-section" class="row">
+            <div id="content-body" class="col-md-9">
+                
+    <div class="row">
+        <div class="col-md-2">
+            
+                
+                <img src="data:image/jpeg;base64,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" alt="Shay Palachy" />
+            
+        </div>
+        <div class="col-md-6">
+            
+            <h1>Shay Palachy</h1>
+            <div class="bio"><bdi><p>I science data @ ZenCity, trying to help cities understand what their inhabitants think and how they feel. I've also co-founded the ML-centric hackathon DataHack and DataTalks meetup series and the NLPH initiative. I'm interested in ML, network theory and game theory, and I ❤️ making open source Python. Cheers! :)</p></bdi></div>
+            
+                <p>Twitter: <a href="https://twitter.com/shaypal5">@shaypal5</a></p>
+            
+            <h2>Presentations</h2>
+            
+                <h3><a href="/2018/schedule/presentation/11/">Pied PyPIer: Why packaging is important for both close and open data science projects</a></h3>
+                
+                    <p>
+                        Tuesday
+                        11:30 a.m.&ndash;noon
+                        
+                            in
+                            PyData
+                        
+                    </p>
+                
+            
+        </div>
+    </div>
+
+            </div>
+            <div class="col-md-3">
+                
+                    
+
+
+
+
+<h4>Sponsors</h4>
+
+<div class="sponsor-list">
+  
+
+
+
+<div id="content_sponsor-top" class="content-box ">
+    
+    
+</div>
+
+  
+  <h3 style="margin-top: 3em;">
+    Silver
+    <i class="level-logo silver"></i>
+  </h3>
+
+  <div style="margin: 10px 0;">
+    <a href="https://ridewithvia.com/careers">
+      
+      <img src="data:image/png;base64,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" alt="Via" />
+    </a>
+    <p>
+      Via has developed and deployed the world&#39;s first operating system for on-demand dynamic public transit.
+Leveraging advanced algorithms based on big data, artificial intelligence and machine learning (in Python :), the operating system dynamically calculates the routes, timing, pick up and drop-off points in real-time.
+Our system transforms today&#39;s public transportation into an efficient service, customized for every rider.
+Our solution is operating at scale in New-York, Chicago, DC, Paris, Amsterdam, Berlin and many more locations.
+Our product and engineering team is based in Tel Aviv, and we are always looking for talented and motivated people that want to join our (urban) journey!
+    </p>
+  </div>
+</div>
+
+                
+            </div>
+        </div>
+    </main>
+
+
+        
+            <footer>
+                <div>
+                    
+    
+
+
+<div class="footer-logo"></div>
+<div class="pycon-footer">
+  Share:
+  <span class="fb-share-button" data-href="https://il.pycon.org/2018" data-layout="button" data-size="small" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fil.pycon.org%2F2018&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">share</a></span>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Pycon%20Israel">tweet</a>
+  <div>
+    Contact us: <a href="/cdn-cgi/l/email-protection#1970777f765969607a767737766b7e377075" class="envelope-icon"></a>
+      <a href="https://www.facebook.com/pyconisrael" class="fb-logo"></a>
+      <a href="https://twitter.com/pyconil" class="tweeter-logo"></a>
+  </div>
+  <div style="text-align: center;" class="copyright">&copy; 2022 PyCon Israel Team and contributors</div>
+  <div style="text-align: center;" class="powered-by">Site Powered by Eldarion's <a href="http://eldarion.com/symposion/">Symposion</a></div>
+  <div style="text-align: center;" class="powered-by">Site Designed by <a href="http://eldanet.com/">Eldanet.com</a></div>
+</div>
+
+
+                </div>
+            </footer>
+        
+
+        
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/2018/static/js/site.b424cc759b14.js"></script>
+    
+
+
+        
+    
+    
+
+    </body>
+</html>

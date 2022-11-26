@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en"  >
+    <head>
+        <meta charset="utf-8" />
+        <title>PyCon Israel | Kira Radinsky</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+
+        
+    <link href="/2018/static/css/app.cf2a3cb107eb.css" rel="stylesheet" />
+
+
+        
+            <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <![endif]-->
+        
+
+        
+    <link rel="shortcut icon" href="/2018/static/images/favicon.876a1d7f017e.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2018/static/images/favicon-32x32.d1eb23190eb7.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2018/static/images/favicon-96x96.51ad1038f893.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2018/static/images/favicon-16x16.0c37aa64b2ca.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    
+
+    </head>
+    <body class="" id="" >
+        
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=171131396875691&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+  <header id="main-header">
+    <div id="header-extra"></div>
+    <h1 id="logo"><a href="/2018/en/">PyCon Israel 2018</a></h1>
+
+    <nav class="navbar navbar-expand-md navbar-topbar navbar-dark">
+      <div class="container">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav mr-auto">
+            
+            
+
+
+    <li class="nav-item  ">
+        <a href="/2018/en/" class="nav-link "  role="button">Home</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/blog/" class="nav-link "  role="button">Blog</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/code-of-conduct/" class="nav-link "  role="button">Code of Conduct</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/schedule/" class="nav-link "  role="button">Schedule</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/venue/" class="nav-link "  role="button">Venue</a>
+        
+    </li>
+
+
+            
+            
+          </ul>
+          
+          
+
+
+
+<ul class="navbar-nav">
+    
+        <li class="nav-item"><a class="nav-link" href="/2018/account/login/">Log in</a></li>
+        
+    
+</ul>
+
+<form id="accountLogOutForm" style="display: none;" action="/2018/account/logout/" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='yajY4Ha0oZKENeHqCNH3zulghiJqxmT5F6G1C8TKa65rwppz93ejbYqZBxESdJJv' />
+</form>
+
+          
+
+<form action="/2018/i18n/setlang/" method="post" class="navbar-nav"><input type='hidden' name='csrfmiddlewaretoken' value='yajY4Ha0oZKENeHqCNH3zulghiJqxmT5F6G1C8TKa65rwppz93ejbYqZBxESdJJv' />
+    
+    
+    
+    
+    
+      
+    
+      
+       <button name="language" value="he">עברית</button>
+      
+    
+</form>
+
+        </div>
+        
+      </div>
+    </nav>
+
+  </header>
+
+
+
+        
+    <main class="container">
+        <div id="content-section" class="row">
+            <div id="content-body" class="col-md-9">
+                
+    <div class="row">
+        <div class="col-md-2">
+            
+                
+                <img src="data:image/jpeg;base64,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" alt="Kira Radinsky" />
+            
+        </div>
+        <div class="col-md-6">
+            
+            <h1>Kira Radinsky</h1>
+            <div class="bio"><bdi><p>As the chief scientist and the director of data science of eBay, Dr. Kira Radinsky is building the next generation predictive data mining, deep learning and natural language processing solutions that will transform eCommerce. She co-founded SalesPredict, acquired by eBay in 2016, that was the leader in the field of predictive marketing building solutions leveraging large-scale data mining to predict sales conversions. One of the up-and-coming voices in the data science community, she is pioneering the field of medical data mining.</p>
+<p>Dr. Radinsky gained international recognition for her work at Microsoft Research, where she developed predictive algorithms that recognized the early warning signs of globally impactful events, including political riots and disease epidemics. In 2013, she was named to the MIT Technology Review’s 35 Young Innovators Under 35, in 2015 as Forbes 30 under 30 rising stars in enterprise technology, and in 2016 selected as “woman of the year” by Globes. She is a frequent presenter at global tech events, including TEDx, Wired, Strata Data Science, Techcrunch and academic conferences, and she publishes in the Harvard Business Review.</p>
+<p>Radinsky serves as a board member in: Israel Security Authorities, Maccabi Research Institute, and technology board of HSBC bank. Dr. Radinsky also serves as visiting professor at the Technion, Israel’s leading science and technology institute, where she focuses on the application of predictive data mining in medicine.</p>
+<p>The title of Dr. Kira Radinsky’s talk at PyCon IL 2018 is: “The quest to predict the future of humanity”</p>
+<p>http://www.kiraradinsky.com</p></bdi></div>
+            
+                <p>Twitter: <a href="https://twitter.com/KiraRadinsky">@KiraRadinsky</a></p>
+            
+            <h2>Presentations</h2>
+            
+                <h3><a href="/2018/schedule/presentation/17/">The quest to predict the future of humanity</a></h3>
+                
+                    <p>
+                        Monday
+                        noon&ndash;1 p.m.
+                        
+                    </p>
+                
+            
+        </div>
+    </div>
+
+            </div>
+            <div class="col-md-3">
+                
+                    
+
+
+
+
+<h4>Sponsors</h4>
+
+<div class="sponsor-list">
+  
+
+
+
+<div id="content_sponsor-top" class="content-box ">
+    
+    
+</div>
+
+  
+  <h3 style="margin-top: 3em;">
+    Silver
+    <i class="level-logo silver"></i>
+  </h3>
+
+  <div style="margin: 10px 0;">
+    <a href="https://applitools.com/?utm_source=PyCon-Israel-2018">
+      
+      <img src="data:image/png;base64,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" alt="Applitools" />
+    </a>
+    <p>
+      Applitools is the creator of Application Visual Management (AVM) to help companies release, test and monitor flawless mobile, web, and native apps in a fully automated way.
+Founded in 2013, Applitools uses sophisticated AI-powered image processing technology to ensure that an application appears correctly and functions properly on all mobile devices, browsers, operating systems and screen sizes.
+Applitools has customers from a range of verticals, including Fortune-100 companies in software, banking, online retail, insurance, and pharmaceuticals.
+Applitools is headquartered in San Mateo, California, with an R&amp;D center in Tel Aviv, Israel. For more information, please visit applitools.com.
+    </p>
+  </div>
+</div>
+
+                
+            </div>
+        </div>
+    </main>
+
+
+        
+            <footer>
+                <div>
+                    
+    
+
+
+<div class="footer-logo"></div>
+<div class="pycon-footer">
+  Share:
+  <span class="fb-share-button" data-href="https://il.pycon.org/2018" data-layout="button" data-size="small" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fil.pycon.org%2F2018&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">share</a></span>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Pycon%20Israel">tweet</a>
+  <div>
+    Contact us: <a href="/cdn-cgi/l/email-protection#244d4a424b64545d474b4a0a4b56430a4d48" class="envelope-icon"></a>
+      <a href="https://www.facebook.com/pyconisrael" class="fb-logo"></a>
+      <a href="https://twitter.com/pyconil" class="tweeter-logo"></a>
+  </div>
+  <div style="text-align: center;" class="copyright">&copy; 2022 PyCon Israel Team and contributors</div>
+  <div style="text-align: center;" class="powered-by">Site Powered by Eldarion's <a href="http://eldarion.com/symposion/">Symposion</a></div>
+  <div style="text-align: center;" class="powered-by">Site Designed by <a href="http://eldanet.com/">Eldanet.com</a></div>
+</div>
+
+
+                </div>
+            </footer>
+        
+
+        
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/2018/static/js/site.b424cc759b14.js"></script>
+    
+
+
+        
+    
+    
+
+    </body>
+</html>

@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en"  >
+    <head>
+        <meta charset="utf-8" />
+        <title>PyCon Israel | Itamar Hartstein</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+
+        
+    <link href="/2018/static/css/app.cf2a3cb107eb.css" rel="stylesheet" />
+
+
+        
+            <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <![endif]-->
+        
+
+        
+    <link rel="shortcut icon" href="/2018/static/images/favicon.876a1d7f017e.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2018/static/images/favicon-32x32.d1eb23190eb7.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2018/static/images/favicon-96x96.51ad1038f893.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2018/static/images/favicon-16x16.0c37aa64b2ca.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    
+
+    </head>
+    <body class="" id="" >
+        
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=171131396875691&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+  <header id="main-header">
+    <div id="header-extra"></div>
+    <h1 id="logo"><a href="/2018/en/">PyCon Israel 2018</a></h1>
+
+    <nav class="navbar navbar-expand-md navbar-topbar navbar-dark">
+      <div class="container">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav mr-auto">
+            
+            
+
+
+    <li class="nav-item  ">
+        <a href="/2018/en/" class="nav-link "  role="button">Home</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/blog/" class="nav-link "  role="button">Blog</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/code-of-conduct/" class="nav-link "  role="button">Code of Conduct</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/schedule/" class="nav-link "  role="button">Schedule</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/venue/" class="nav-link "  role="button">Venue</a>
+        
+    </li>
+
+
+            
+            
+          </ul>
+          
+          
+
+
+
+<ul class="navbar-nav">
+    
+        <li class="nav-item"><a class="nav-link" href="/2018/account/login/">Log in</a></li>
+        
+    
+</ul>
+
+<form id="accountLogOutForm" style="display: none;" action="/2018/account/logout/" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='UqjvnAHUioEkCQmg6s4Vp85m5RJVvDWe1mGyV1qE4vZ7l14pDIBb1Ca5p6Enb0ME' />
+</form>
+
+          
+
+<form action="/2018/i18n/setlang/" method="post" class="navbar-nav"><input type='hidden' name='csrfmiddlewaretoken' value='UqjvnAHUioEkCQmg6s4Vp85m5RJVvDWe1mGyV1qE4vZ7l14pDIBb1Ca5p6Enb0ME' />
+    
+    
+    
+    
+    
+      
+    
+      
+       <button name="language" value="he">עברית</button>
+      
+    
+</form>
+
+        </div>
+        
+      </div>
+    </nav>
+
+  </header>
+
+
+
+        
+    <main class="container">
+        <div id="content-section" class="row">
+            <div id="content-body" class="col-md-9">
+                
+    <div class="row">
+        <div class="col-md-2">
+            
+                
+                <img src="data:image/jpeg;base64,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" alt="Itamar Hartstein" />
+            
+        </div>
+        <div class="col-md-6">
+            
+            <h1>Itamar Hartstein</h1>
+            <div class="bio"><bdi><p>Tech Lead in Singular Labs, worked on various large scale Python systems in our organization. 
+Loves coding, music, and reading stack traces on the beach.</p></bdi></div>
+            
+            <h2>Presentations</h2>
+            
+                <h3><a href="/2018/schedule/presentation/42/">Advanced Celery Tricks - How we adapted and extended Celery to fit our data pipeline</a></h3>
+                
+                    <p>
+                        Tuesday
+                        2:30 p.m.&ndash;3 p.m.
+                        
+                            in
+                            Main Hall
+                        
+                    </p>
+                
+            
+        </div>
+    </div>
+
+            </div>
+            <div class="col-md-3">
+                
+                    
+
+
+
+
+<h4>Sponsors</h4>
+
+<div class="sponsor-list">
+  
+
+
+
+<div id="content_sponsor-top" class="content-box ">
+    
+    
+</div>
+
+  
+  <h3 style="margin-top: 3em;">
+    Silver
+    <i class="level-logo silver"></i>
+  </h3>
+
+  <div style="margin: 10px 0;">
+    <a href="https://blogs.oracle.com/oracledatacloud/crosswise-team-open-positions">
+      
+      <img src="data:image/png;base64,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" alt="Oracle" />
+    </a>
+    <p>
+      Oracle’s R&amp;D organization is comprised of engineers with passion and expertise for solving difficult problems in highly scalable environments - from distributed systems and virtualized infrastructure to big-data and probabilistic modeling. A substantial organization with an entrepreneurial fast paced mentality - we are still only just starting; with a lot of positive energy and fast decision making.
+
+If it’s in solving immense data-centric challenges like we do at Crosswise or in changing the way companies consume the public cloud like we do at Ravello, at Oracle you can design and build innovative systems from the ground up. To apply send email to <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6d1f0203431f080419081f2d021f0c0e0108430e020043">[email&#160;protected]</a>
+    </p>
+  </div>
+</div>
+
+                
+            </div>
+        </div>
+    </main>
+
+
+        
+            <footer>
+                <div>
+                    
+    
+
+
+<div class="footer-logo"></div>
+<div class="pycon-footer">
+  Share:
+  <span class="fb-share-button" data-href="https://il.pycon.org/2018" data-layout="button" data-size="small" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fil.pycon.org%2F2018&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">share</a></span>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Pycon%20Israel">tweet</a>
+  <div>
+    Contact us: <a href="/cdn-cgi/l/email-protection#dbb2b5bdb49baba2b8b4b5f5b4a9bcf5b2b7" class="envelope-icon"></a>
+      <a href="https://www.facebook.com/pyconisrael" class="fb-logo"></a>
+      <a href="https://twitter.com/pyconil" class="tweeter-logo"></a>
+  </div>
+  <div style="text-align: center;" class="copyright">&copy; 2022 PyCon Israel Team and contributors</div>
+  <div style="text-align: center;" class="powered-by">Site Powered by Eldarion's <a href="http://eldarion.com/symposion/">Symposion</a></div>
+  <div style="text-align: center;" class="powered-by">Site Designed by <a href="http://eldanet.com/">Eldanet.com</a></div>
+</div>
+
+
+                </div>
+            </footer>
+        
+
+        
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/2018/static/js/site.b424cc759b14.js"></script>
+    
+
+
+        
+    
+    
+
+    </body>
+</html>

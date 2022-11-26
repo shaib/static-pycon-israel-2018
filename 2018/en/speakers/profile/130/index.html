@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en"  >
+    <head>
+        <meta charset="utf-8" />
+        <title>PyCon Israel | Tal Peretz</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+
+        
+    <link href="/2018/static/css/app.cf2a3cb107eb.css" rel="stylesheet" />
+
+
+        
+            <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <![endif]-->
+        
+
+        
+    <link rel="shortcut icon" href="/2018/static/images/favicon.876a1d7f017e.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2018/static/images/favicon-32x32.d1eb23190eb7.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2018/static/images/favicon-96x96.51ad1038f893.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2018/static/images/favicon-16x16.0c37aa64b2ca.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    
+
+    </head>
+    <body class="" id="" >
+        
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=171131396875691&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+  <header id="main-header">
+    <div id="header-extra"></div>
+    <h1 id="logo"><a href="/2018/en/">PyCon Israel 2018</a></h1>
+
+    <nav class="navbar navbar-expand-md navbar-topbar navbar-dark">
+      <div class="container">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav mr-auto">
+            
+            
+
+
+    <li class="nav-item  ">
+        <a href="/2018/en/" class="nav-link "  role="button">Home</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/blog/" class="nav-link "  role="button">Blog</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/code-of-conduct/" class="nav-link "  role="button">Code of Conduct</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/schedule/" class="nav-link "  role="button">Schedule</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/venue/" class="nav-link "  role="button">Venue</a>
+        
+    </li>
+
+
+            
+            
+          </ul>
+          
+          
+
+
+
+<ul class="navbar-nav">
+    
+        <li class="nav-item"><a class="nav-link" href="/2018/account/login/">Log in</a></li>
+        
+    
+</ul>
+
+<form id="accountLogOutForm" style="display: none;" action="/2018/account/logout/" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='9ADjhl60OdCpvaY5jAwMattvTcNIRyYcgw0mPMPKAkXcelGeQQ32MXyedrIaxVOC' />
+</form>
+
+          
+
+<form action="/2018/i18n/setlang/" method="post" class="navbar-nav"><input type='hidden' name='csrfmiddlewaretoken' value='9ADjhl60OdCpvaY5jAwMattvTcNIRyYcgw0mPMPKAkXcelGeQQ32MXyedrIaxVOC' />
+    
+    
+    
+    
+    
+      
+    
+      
+       <button name="language" value="he">עברית</button>
+      
+    
+</form>
+
+        </div>
+        
+      </div>
+    </nav>
+
+  </header>
+
+
+
+        
+    <main class="container">
+        <div id="content-section" class="row">
+            <div id="content-body" class="col-md-9">
+                
+    <div class="row">
+        <div class="col-md-2">
+            
+                
+                <img src="data:image/jpeg;base64,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" alt="Tal Peretz" />
+            
+        </div>
+        <div class="col-md-6">
+            
+            <h1>Tal Peretz</h1>
+            <div class="bio"><bdi><p>Tal Peretz, currently a Data Scientist @Panorays, have formerly played diverse roles in the Israeli Air Force<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Israeli_Air_Force_-_Coat_of_arms.svg/150px-Israeli_Air_Force_-_Coat_of_arms.svg.png" width="40"/>. </p>
+<p>Tal participated in a special confidential course in which he accomplished his <strong>Mathematics and Computer Science BSc in 1 year</strong>.</p>
+<p>He then pivoted to an IAF software department in which he developed a large near real-time Air Traffic Control system, focused on data fusion and data distribution, while pursuing his <strong>MBA in entrepreneurship, innovation and technology management</strong>.</p>
+<p>Tal <strong>founded the Israeli Air Force Data Science team</strong>. 
+He initiated and lead end-to-end a large variety of classified data science projects in multidisciplinary fields, 
+researching and solving challenging classification, regression, clustering, association rules and anomaly detection problems, 
+from specification through data acquisition, exploration, cleaning, transformations and feature engineering to fitting, validating, testing and deploying ml models. 
+all while managing a group of highly intelligent and sarcastic data scientists.</p>
+<h2>Publications</h2>
+<p><a href="https://medium.com/@talperetz24/deep-politics-first-step-towards-an-ai-takeover-236074c7c2d7">Deep Politics - First Step Towards an AI Takeover</a></p>
+<p><a href="https://towardsdatascience.com/visualize-your-data-with-google-data-studio-609c38247905">Visualize Your Data with Google Data Studio</a></p>
+<h2>Contact</h2>
+<p><a href="http://http://talperetz.me/">For More Information</a></p></bdi></div>
+            
+                <p>Twitter: <a href="https://twitter.com/talperetz24">@talperetz24</a></p>
+            
+            <h2>Presentations</h2>
+            
+                <h3><a href="/2018/schedule/presentation/30/">Hacking for Fun &amp; Profit: The Kubernetes Way</a></h3>
+                
+                    <p>
+                        Monday
+                        3:30 p.m.&ndash;4 p.m.
+                        
+                            in
+                            Main Hall
+                        
+                    </p>
+                
+            
+        </div>
+    </div>
+
+            </div>
+            <div class="col-md-3">
+                
+                    
+
+
+
+
+<h4>Sponsors</h4>
+
+<div class="sponsor-list">
+  
+
+
+
+<div id="content_sponsor-top" class="content-box ">
+    
+    
+</div>
+
+  
+  <h3 style="margin-top: 3em;">
+    Diamond
+    <i class="level-logo diamond"></i>
+  </h3>
+
+  <div style="margin: 10px 0;">
+    <a href="https://www.jpmorgan.com/country/IL/EN/jpmorgan">
+      
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/wgALCAAaAGQBASIA/8QAGwAAAQUBAQAAAAAAAAAAAAAAAAECAwQFBgf/2gAIAQEAAAAB9kwYXWqm21zXLYpczFqYmdpgmcnqFZqFiBDjOg0S8AAAAf/EACAQAAIDAAIDAAMAAAAAAAAAAAMEAQIFABQGEhMVMDH/2gAIAQEAAQUCn+ZThmyjcbLpA0CHzsZ7vpZWjd5wbACXllaIIcA7dpaI7APlBwyXl2g0bwL0oZat7+TfFVbIPQqm4b3pzSj1zlVlWvIKhtDFQ0RIiSn4+9BUz+HXAfnWX9aKrUJ1VvnFKRway47iVXFcaqwyHylTtooUhCU1LTKac0/d/8QALRAAAgECBAQFBAMBAAAAAAAAAQIDABEEEhMhBTEyQRQiUVJhBhAjoTBCcpH/2gAIAQEABj8C2rFLIqKMPMYtu/zWKwaLD+AKbm++ap50iCTQMyOhNxmX5oTFNOQMUkT2sKxcemEjgICnu1+9ZEmjZvQNVziIrA26xzrLJNGhPZmtTEzxjI2RvNyPpWtrR6fuzbVpCaMva+XNv9o8KzflkUsot6VxEs6qJMe4S56jYcq4mI5tM6cXIA9qxSYeQOPOZHzXJbvf5qXDwg6fEluCP6OOo/8AK+oxhtnVUC5ewyVwjwoGfXi0svpbf9VxdJ4o5RaIWP8AmuLRJD4jWARCtrL5bZD6VwvBCGJ8YI2tIxso2GY/Jrj6mSM3klO3I+Wvp6VQoYzRXbubrv8AZdaJHy8rjlUa6EdojdBl6T8Vqph4lf3BBemj8PFkZszLl2J9aWyKMvTtyoyRwRI55sqAGs8cMat6gVqR4eJH9wQA1iJMZw+TUMhyvAxs69jz51FBjIxPpklNXzlRfb9UxbCwkt1eQb0qHCwFV6Rpjb+f/8QAIhABAAICAgIDAAMAAAAAAAAAAQARITFRYUGBEHGRMKGx/9oACAEBAAE/IbWwvxc2nYG2A7a3qGfp76yh1qc72c4APDjM2JFF3KSGe9YURZ0K/wBiA72ZT1FJIGtAvG9w0IrApIgTWiTDdu6dQWp+v/fUHINBNjmviqbetkpefcevJiVYOWn8m5/KptzAEyMFndwDz48YH7b+6la+DNgq16uFXpHsaOsrmF8R2F5fTgzuHYDgVWZfC798xPwqjwqzdo89ks8hhhg2hepoydOQyfiwKq3e/R8TrHdrm4OZ1d/P1PJxVNvaPLDwQapo64m/mAD2TgpQSvriJmzf6hAb1C+BZWHPUpiTCWClu0oXCOaCWqavGal6MbaL7orEACj+b//aAAgBAQAAABDTjCjd2f8A/wD/xAAgEAEBAAMAAgIDAQAAAAAAAAABEQAhMUFRYXEQIDCB/9oACAEBAAE/EOoEvovzljuNv0KAkdc7kXvfBQA8NF3bzG406XgAXgRq7NZD+4+nWv8Aj9JlUE1ho+IKG1BlLWsHmNDdOn1hrmmNgN4UYdw9OFEGUF5dX3khFFU1S6kfLebmwkrVk38vnCjWYWlBdSbsn4ZHaE73SEjS73k7wigDR3oQvXrGGh9MPLBL6elwqqQwlB0V0hNEMlLI/D+BWvyBiVUc/UBsQgm9e8KoIgG2Y87eE7gJkQxXGHwEQQ2YdMx4GVDeI3q/TH3QdYDsMFJFXZkE0sE2dbPmv24VCwUaE6tYNfAYcx1Cw5KR8lGmdwAQwYYElPM2b24rQVVDXtJW/eB7DidiwojtXeKIAQliTTSE1hcdSgPaAt+chOREwvSDR8hLlyVVze0At87xbf3EGhToUCl33KkBAszkiyjTPJjQJ/0Mt0QQeQzap4Wy1RTtncAAAEA8fxh6/X//2Q==" alt="JP Morgan" />
+    </a>
+    <p>
+      JPMorgan Chase &amp; Co. is not only a leading global financial institution. It is also one of the world’s biggest tech companies. In 14 technology hubs worldwide, our team of 40,000+ technologists design, build and deploy everything from enterprise technology initiatives to big data and mobile solutions, as well as innovations in electronic payments, cybersecurity, machine learning, and cloud development. Our $9.5B+ annual investment in technology enables us to hire people to create innovative solutions that will not only transform the financial services industry, but also change the world. 
+ 
+We are hiring junior and experienced Python developers for various positions in our newly-built, hi-tech hub in Herzliya. Check out our openings here: https://jobs.jpmorganchase.com/ListJobs/ByCountry/IL/
+    </p>
+  </div>
+</div>
+
+                
+            </div>
+        </div>
+    </main>
+
+
+        
+            <footer>
+                <div>
+                    
+    
+
+
+<div class="footer-logo"></div>
+<div class="pycon-footer">
+  Share:
+  <span class="fb-share-button" data-href="https://il.pycon.org/2018" data-layout="button" data-size="small" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fil.pycon.org%2F2018&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">share</a></span>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Pycon%20Israel">tweet</a>
+  <div>
+    Contact us: <a href="/cdn-cgi/l/email-protection#21484f474e615158424e4f0f4e53460f484d" class="envelope-icon"></a>
+      <a href="https://www.facebook.com/pyconisrael" class="fb-logo"></a>
+      <a href="https://twitter.com/pyconil" class="tweeter-logo"></a>
+  </div>
+  <div style="text-align: center;" class="copyright">&copy; 2022 PyCon Israel Team and contributors</div>
+  <div style="text-align: center;" class="powered-by">Site Powered by Eldarion's <a href="http://eldarion.com/symposion/">Symposion</a></div>
+  <div style="text-align: center;" class="powered-by">Site Designed by <a href="http://eldanet.com/">Eldanet.com</a></div>
+</div>
+
+
+                </div>
+            </footer>
+        
+
+        
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/2018/static/js/site.b424cc759b14.js"></script>
+    
+
+
+        
+    
+    
+
+    </body>
+</html>

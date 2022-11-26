@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en"  >
+    <head>
+        <meta charset="utf-8" />
+        <title>PyCon Israel | Sarah Bird</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+
+        
+    <link href="/2018/static/css/app.cf2a3cb107eb.css" rel="stylesheet" />
+
+
+        
+            <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <![endif]-->
+        
+
+        
+    <link rel="shortcut icon" href="/2018/static/images/favicon.876a1d7f017e.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2018/static/images/favicon-32x32.d1eb23190eb7.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2018/static/images/favicon-96x96.51ad1038f893.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2018/static/images/favicon-16x16.0c37aa64b2ca.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    
+
+    </head>
+    <body class="" id="" >
+        
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=171131396875691&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+  <header id="main-header">
+    <div id="header-extra"></div>
+    <h1 id="logo"><a href="/2018/en/">PyCon Israel 2018</a></h1>
+
+    <nav class="navbar navbar-expand-md navbar-topbar navbar-dark">
+      <div class="container">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav mr-auto">
+            
+            
+
+
+    <li class="nav-item  ">
+        <a href="/2018/en/" class="nav-link "  role="button">Home</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/blog/" class="nav-link "  role="button">Blog</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/code-of-conduct/" class="nav-link "  role="button">Code of Conduct</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/schedule/" class="nav-link "  role="button">Schedule</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/venue/" class="nav-link "  role="button">Venue</a>
+        
+    </li>
+
+
+            
+            
+          </ul>
+          
+          
+
+
+
+<ul class="navbar-nav">
+    
+        <li class="nav-item"><a class="nav-link" href="/2018/account/login/">Log in</a></li>
+        
+    
+</ul>
+
+<form id="accountLogOutForm" style="display: none;" action="/2018/account/logout/" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='Nwavix8QWHuhKKNc8fWncunlU7dJlhjMUsxyQYRAIOP4tVvlFvtDOYs4em8b1E9c' />
+</form>
+
+          
+
+<form action="/2018/i18n/setlang/" method="post" class="navbar-nav"><input type='hidden' name='csrfmiddlewaretoken' value='Nwavix8QWHuhKKNc8fWncunlU7dJlhjMUsxyQYRAIOP4tVvlFvtDOYs4em8b1E9c' />
+    
+    
+    
+    
+    
+      
+    
+      
+       <button name="language" value="he">עברית</button>
+      
+    
+</form>
+
+        </div>
+        
+      </div>
+    </nav>
+
+  </header>
+
+
+
+        
+    <main class="container">
+        <div id="content-section" class="row">
+            <div id="content-body" class="col-md-9">
+                
+    <div class="row">
+        <div class="col-md-2">
+            
+                
+                <img src="data:image/jpeg;base64,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" alt="Sarah Bird" />
+            
+        </div>
+        <div class="col-md-6">
+            
+            <h1>Sarah Bird</h1>
+            <div class="bio"><bdi><p>Sarah is a Research and Experiments Engineer at Mozilla. Previously she was a software engineer at Anaconda. She has been a core developer of the interactive visualization library Bokeh since 2015.</p>
+<p>After a brief spell designing ejection seats for fighter jets, her career turned to applying technology to international development. She has worked in many sectors, including mobile health and data collection in Pakistan, Peru, Haiti and elsewhere.</p>
+<p>Having coded as a hobby and been a long-time open-source user, in 2012 Sarah decided to become a full-time software engineer. As a full-stack engineer at Aptivate, Sarah built software solutions for the nonprofit sector. In 2014, while working on an open data project for the World Bank, she discovered Bokeh—a data visualization library that doesn’t require you to write Javascript—and was hooked!</p></bdi></div>
+            
+                <p>Twitter: <a href="https://twitter.com/birdsarah">@birdsarah</a></p>
+            
+            <h2>Presentations</h2>
+            
+                <h3><a href="/2018/schedule/presentation/18/">The web is terrifying</a></h3>
+                
+                    <p>
+                        Tuesday
+                        9:15 a.m.&ndash;10:15 a.m.
+                        
+                    </p>
+                
+            
+        </div>
+    </div>
+
+            </div>
+            <div class="col-md-3">
+                
+                    
+
+
+
+
+<h4>Sponsors</h4>
+
+<div class="sponsor-list">
+  
+
+
+
+<div id="content_sponsor-top" class="content-box ">
+    
+    
+</div>
+
+  
+  <h3 style="margin-top: 3em;">
+    Diamond
+    <i class="level-logo diamond"></i>
+  </h3>
+
+  <div style="margin: 10px 0;">
+    <a href="https://www.jpmorgan.com/country/IL/EN/jpmorgan">
+      
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/wgALCAAaAGQBASIA/8QAGwAAAQUBAQAAAAAAAAAAAAAAAAECAwQFBgf/2gAIAQEAAAAB9kwYXWqm21zXLYpczFqYmdpgmcnqFZqFiBDjOg0S8AAAAf/EACAQAAIDAAIDAAMAAAAAAAAAAAMEAQIFABQGEhMVMDH/2gAIAQEAAQUCn+ZThmyjcbLpA0CHzsZ7vpZWjd5wbACXllaIIcA7dpaI7APlBwyXl2g0bwL0oZat7+TfFVbIPQqm4b3pzSj1zlVlWvIKhtDFQ0RIiSn4+9BUz+HXAfnWX9aKrUJ1VvnFKRway47iVXFcaqwyHylTtooUhCU1LTKac0/d/8QALRAAAgECBAQFBAMBAAAAAAAAAQIDABEEEhMhBTEyQRQiUVJhBhAjoTBCcpH/2gAIAQEABj8C2rFLIqKMPMYtu/zWKwaLD+AKbm++ap50iCTQMyOhNxmX5oTFNOQMUkT2sKxcemEjgICnu1+9ZEmjZvQNVziIrA26xzrLJNGhPZmtTEzxjI2RvNyPpWtrR6fuzbVpCaMva+XNv9o8KzflkUsot6VxEs6qJMe4S56jYcq4mI5tM6cXIA9qxSYeQOPOZHzXJbvf5qXDwg6fEluCP6OOo/8AK+oxhtnVUC5ewyVwjwoGfXi0svpbf9VxdJ4o5RaIWP8AmuLRJD4jWARCtrL5bZD6VwvBCGJ8YI2tIxso2GY/Jrj6mSM3klO3I+Wvp6VQoYzRXbubrv8AZdaJHy8rjlUa6EdojdBl6T8Vqph4lf3BBemj8PFkZszLl2J9aWyKMvTtyoyRwRI55sqAGs8cMat6gVqR4eJH9wQA1iJMZw+TUMhyvAxs69jz51FBjIxPpklNXzlRfb9UxbCwkt1eQb0qHCwFV6Rpjb+f/8QAIhABAAICAgIDAAMAAAAAAAAAAQARITFRYUGBEHGRMKGx/9oACAEBAAE/IbWwvxc2nYG2A7a3qGfp76yh1qc72c4APDjM2JFF3KSGe9YURZ0K/wBiA72ZT1FJIGtAvG9w0IrApIgTWiTDdu6dQWp+v/fUHINBNjmviqbetkpefcevJiVYOWn8m5/KptzAEyMFndwDz48YH7b+6la+DNgq16uFXpHsaOsrmF8R2F5fTgzuHYDgVWZfC798xPwqjwqzdo89ks8hhhg2hepoydOQyfiwKq3e/R8TrHdrm4OZ1d/P1PJxVNvaPLDwQapo64m/mAD2TgpQSvriJmzf6hAb1C+BZWHPUpiTCWClu0oXCOaCWqavGal6MbaL7orEACj+b//aAAgBAQAAABDTjCjd2f8A/wD/xAAgEAEBAAMAAgIDAQAAAAAAAAABEQAhMUFRYXEQIDCB/9oACAEBAAE/EOoEvovzljuNv0KAkdc7kXvfBQA8NF3bzG406XgAXgRq7NZD+4+nWv8Aj9JlUE1ho+IKG1BlLWsHmNDdOn1hrmmNgN4UYdw9OFEGUF5dX3khFFU1S6kfLebmwkrVk38vnCjWYWlBdSbsn4ZHaE73SEjS73k7wigDR3oQvXrGGh9MPLBL6elwqqQwlB0V0hNEMlLI/D+BWvyBiVUc/UBsQgm9e8KoIgG2Y87eE7gJkQxXGHwEQQ2YdMx4GVDeI3q/TH3QdYDsMFJFXZkE0sE2dbPmv24VCwUaE6tYNfAYcx1Cw5KR8lGmdwAQwYYElPM2b24rQVVDXtJW/eB7DidiwojtXeKIAQliTTSE1hcdSgPaAt+chOREwvSDR8hLlyVVze0At87xbf3EGhToUCl33KkBAszkiyjTPJjQJ/0Mt0QQeQzap4Wy1RTtncAAAEA8fxh6/X//2Q==" alt="JP Morgan" />
+    </a>
+    <p>
+      JPMorgan Chase &amp; Co. is not only a leading global financial institution. It is also one of the world’s biggest tech companies. In 14 technology hubs worldwide, our team of 40,000+ technologists design, build and deploy everything from enterprise technology initiatives to big data and mobile solutions, as well as innovations in electronic payments, cybersecurity, machine learning, and cloud development. Our $9.5B+ annual investment in technology enables us to hire people to create innovative solutions that will not only transform the financial services industry, but also change the world. 
+ 
+We are hiring junior and experienced Python developers for various positions in our newly-built, hi-tech hub in Herzliya. Check out our openings here: https://jobs.jpmorganchase.com/ListJobs/ByCountry/IL/
+    </p>
+  </div>
+</div>
+
+                
+            </div>
+        </div>
+    </main>
+
+
+        
+            <footer>
+                <div>
+                    
+    
+
+
+<div class="footer-logo"></div>
+<div class="pycon-footer">
+  Share:
+  <span class="fb-share-button" data-href="https://il.pycon.org/2018" data-layout="button" data-size="small" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fil.pycon.org%2F2018&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">share</a></span>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Pycon%20Israel">tweet</a>
+  <div>
+    Contact us: <a href="/cdn-cgi/l/email-protection#5e373038311e2e273d313070312c39703732" class="envelope-icon"></a>
+      <a href="https://www.facebook.com/pyconisrael" class="fb-logo"></a>
+      <a href="https://twitter.com/pyconil" class="tweeter-logo"></a>
+  </div>
+  <div style="text-align: center;" class="copyright">&copy; 2022 PyCon Israel Team and contributors</div>
+  <div style="text-align: center;" class="powered-by">Site Powered by Eldarion's <a href="http://eldarion.com/symposion/">Symposion</a></div>
+  <div style="text-align: center;" class="powered-by">Site Designed by <a href="http://eldanet.com/">Eldanet.com</a></div>
+</div>
+
+
+                </div>
+            </footer>
+        
+
+        
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/2018/static/js/site.b424cc759b14.js"></script>
+    
+
+
+        
+    
+    
+
+    </body>
+</html>

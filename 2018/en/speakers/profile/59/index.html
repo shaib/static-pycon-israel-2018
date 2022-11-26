@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en"  >
+    <head>
+        <meta charset="utf-8" />
+        <title>PyCon Israel | Jacob Barhak</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+
+        
+    <link href="/2018/static/css/app.cf2a3cb107eb.css" rel="stylesheet" />
+
+
+        
+            <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <![endif]-->
+        
+
+        
+    <link rel="shortcut icon" href="/2018/static/images/favicon.876a1d7f017e.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2018/static/images/favicon-32x32.d1eb23190eb7.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2018/static/images/favicon-96x96.51ad1038f893.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2018/static/images/favicon-16x16.0c37aa64b2ca.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    
+
+    </head>
+    <body class="" id="" >
+        
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=171131396875691&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+  <header id="main-header">
+    <div id="header-extra"></div>
+    <h1 id="logo"><a href="/2018/en/">PyCon Israel 2018</a></h1>
+
+    <nav class="navbar navbar-expand-md navbar-topbar navbar-dark">
+      <div class="container">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav mr-auto">
+            
+            
+
+
+    <li class="nav-item  ">
+        <a href="/2018/en/" class="nav-link "  role="button">Home</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/blog/" class="nav-link "  role="button">Blog</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/code-of-conduct/" class="nav-link "  role="button">Code of Conduct</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/schedule/" class="nav-link "  role="button">Schedule</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/venue/" class="nav-link "  role="button">Venue</a>
+        
+    </li>
+
+
+            
+            
+          </ul>
+          
+          
+
+
+
+<ul class="navbar-nav">
+    
+        <li class="nav-item"><a class="nav-link" href="/2018/account/login/">Log in</a></li>
+        
+    
+</ul>
+
+<form id="accountLogOutForm" style="display: none;" action="/2018/account/logout/" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='rmPAUpT1iDkuKsEnsWRNMKSETSAebYqMyicDsQCL4KFhtDmwZco3oeXnd7vGRlgc' />
+</form>
+
+          
+
+<form action="/2018/i18n/setlang/" method="post" class="navbar-nav"><input type='hidden' name='csrfmiddlewaretoken' value='rmPAUpT1iDkuKsEnsWRNMKSETSAebYqMyicDsQCL4KFhtDmwZco3oeXnd7vGRlgc' />
+    
+    
+    
+    
+    
+      
+    
+      
+       <button name="language" value="he">עברית</button>
+      
+    
+</form>
+
+        </div>
+        
+      </div>
+    </nav>
+
+  </header>
+
+
+
+        
+    <main class="container">
+        <div id="content-section" class="row">
+            <div id="content-body" class="col-md-9">
+                
+    <div class="row">
+        <div class="col-md-2">
+            
+                
+                <img src="data:image/jpeg;base64,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" alt="Jacob Barhak" />
+            
+        </div>
+        <div class="col-md-6">
+            
+            <h1>Jacob Barhak</h1>
+            <div class="bio"><bdi><p>Jacob Barhak has diverse international background in engineering, computing science, and disease modeling. He was educated at the Technion Israel Institute of Technology. From 2003 to 2006 he worked at an NSF Engineering Research Center at the University of Michigan focusing on inspection systems and personalization. From 2006 to 2012 he led the technical development of disease modeling tools for the Michigan Model for diabetes at the University of Michigan. The Reference Model for disease progression was self developed in 2012 and he currently pursues this development effort as an independent researcher. He is the developer of the Micro Simulation Tool (MIST).
+His work was internationally exposed in multiple venues. His disease modeling work was repeatedly presented in multiple venues, including MODSIM, SummerSim, I/ITSEC, MSM/IMAG meeting.  Dr. Barhak is an advocate of non-blind scientific public review processes and active in organization work, including SummerSim and the Population Modeling working group. He is active within the python community and runs the Austin Evening of Python Coding meetup. 
+His activities and publications are summarized in the following web page: http://sites.google.com/site/jacobbarhak/</p></bdi></div>
+            
+            <h2>Presentations</h2>
+            
+                <h3><a href="/2018/schedule/presentation/38/">Evolutionary Computation Examples with Inspyred</a></h3>
+                
+                    <p>
+                        Tuesday
+                        11:30 a.m.&ndash;noon
+                        
+                            in
+                            Main Hall
+                        
+                    </p>
+                
+            
+        </div>
+    </div>
+
+            </div>
+            <div class="col-md-3">
+                
+                    
+
+
+
+
+<h4>Sponsors</h4>
+
+<div class="sponsor-list">
+  
+
+
+
+<div id="content_sponsor-top" class="content-box ">
+    
+    
+</div>
+
+  
+  <h3 style="margin-top: 3em;">
+    Silver
+    <i class="level-logo silver"></i>
+  </h3>
+
+  <div style="margin: 10px 0;">
+    <a href="http://www.allegro.ai/">
+      
+      <img src="data:image/jpeg;base64,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" alt="Allegro" />
+    </a>
+    <p>
+      Allegro.ai is a pioneering deep learning computer vision platform that
+provides a complete product lifecycle management solution for AI
+development &amp; production, starting with computer vision. The company’s
+platform simplifies the process of developing and managing deep learning
+powered solutions - such as for autonomous vehicles, robotics, security
+cameras, logistics and others.
+
+For more information, visit http://www.allegro.ai.
+    </p>
+  </div>
+</div>
+
+                
+            </div>
+        </div>
+    </main>
+
+
+        
+            <footer>
+                <div>
+                    
+    
+
+
+<div class="footer-logo"></div>
+<div class="pycon-footer">
+  Share:
+  <span class="fb-share-button" data-href="https://il.pycon.org/2018" data-layout="button" data-size="small" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fil.pycon.org%2F2018&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">share</a></span>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Pycon%20Israel">tweet</a>
+  <div>
+    Contact us: <a href="/cdn-cgi/l/email-protection#40292e262f003039232f2e6e2f32276e292c" class="envelope-icon"></a>
+      <a href="https://www.facebook.com/pyconisrael" class="fb-logo"></a>
+      <a href="https://twitter.com/pyconil" class="tweeter-logo"></a>
+  </div>
+  <div style="text-align: center;" class="copyright">&copy; 2022 PyCon Israel Team and contributors</div>
+  <div style="text-align: center;" class="powered-by">Site Powered by Eldarion's <a href="http://eldarion.com/symposion/">Symposion</a></div>
+  <div style="text-align: center;" class="powered-by">Site Designed by <a href="http://eldanet.com/">Eldanet.com</a></div>
+</div>
+
+
+                </div>
+            </footer>
+        
+
+        
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/2018/static/js/site.b424cc759b14.js"></script>
+    
+
+
+        
+    
+    
+
+    </body>
+</html>

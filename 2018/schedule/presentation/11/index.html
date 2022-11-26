@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en"  >
+    <head>
+        <meta charset="utf-8" />
+        <title>PyCon Israel | Presentation: Pied PyPIer: Why packaging is important for both close and open data science projects</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+
+        
+    <link href="/2018/static/css/app.cf2a3cb107eb.css" rel="stylesheet" />
+
+
+        
+            <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <![endif]-->
+        
+
+        
+    <link rel="shortcut icon" href="/2018/static/images/favicon.876a1d7f017e.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2018/static/images/favicon-32x32.d1eb23190eb7.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2018/static/images/favicon-96x96.51ad1038f893.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2018/static/images/favicon-16x16.0c37aa64b2ca.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    
+
+    </head>
+    <body class="" id="" >
+        
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=171131396875691&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+  <header id="main-header">
+    <div id="header-extra"></div>
+    <h1 id="logo"><a href="/2018/en/">PyCon Israel 2018</a></h1>
+
+    <nav class="navbar navbar-expand-md navbar-topbar navbar-dark">
+      <div class="container">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav mr-auto">
+            
+            
+
+
+    <li class="nav-item  ">
+        <a href="/2018/en/" class="nav-link "  role="button">Home</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/blog/" class="nav-link "  role="button">Blog</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/code-of-conduct/" class="nav-link "  role="button">Code of Conduct</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/schedule/" class="nav-link "  role="button">Schedule</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/venue/" class="nav-link "  role="button">Venue</a>
+        
+    </li>
+
+
+            
+            
+          </ul>
+          
+          
+
+
+
+<ul class="navbar-nav">
+    
+        <li class="nav-item"><a class="nav-link" href="/2018/account/login/">Log in</a></li>
+        
+    
+</ul>
+
+<form id="accountLogOutForm" style="display: none;" action="/2018/account/logout/" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='QIvhaX5pzb488RlLR7hiQkOTzajQaS49XESkIoO9lipVR23UonOysOTCTpeiQfUz' />
+</form>
+
+          
+
+<form action="/2018/i18n/setlang/" method="post" class="navbar-nav"><input type='hidden' name='csrfmiddlewaretoken' value='QIvhaX5pzb488RlLR7hiQkOTzajQaS49XESkIoO9lipVR23UonOysOTCTpeiQfUz' />
+    
+    
+    
+    
+    
+      
+    
+      
+       <button name="language" value="he">עברית</button>
+      
+    
+</form>
+
+        </div>
+        
+      </div>
+    </nav>
+
+  </header>
+
+
+
+        
+    <main class="container">
+        <div id="content-section" class="row">
+            <div id="content-body" class="col-md-9">
+                
+    
+        <h4>
+            Tuesday
+            11:30 a.m.&ndash;noon
+            
+                in
+                PyData
+            
+        </h4>
+    
+    <h2>Pied PyPIer: Why packaging is important for both close and open data science projects</h2>
+
+    <h4>
+        
+            <a href="/2018/en/speakers/profile/106/">Shay Palachy</a>
+    </h4>
+
+    <dl class="dl-horizontal">
+        <dt>Audience level:</dt>
+        <dd style="margin-bottom: 0;">Novice</dd>
+    </dl>
+
+    <h3>Abstract</h3>
+
+    <div class="abstract"><bdi><p>When working on data science projects we are often tempted to leave our code to rot in scattered notebooks or Python modules deep in the project’s repository. </p>
+<p>However, even when you can’t release parts of your code as open source, breaking some important components into standalone Python packages can help with managing technical debt and code maintenance, facilitate in-house code reuse and repurposing, and make production-ising and deployment of code easier.</p>
+<p>In this talk I'll try to demonstrate the ways treating your components and problem solutions as independent packages can benefit both your colleagues and (present and future) you, and review the tools Python provides for building and managing these packages, both in-company and openly.</p>
+<p>I will also share from my experience in packaging some of my code, and discuss the extra benefits from open sourcing packages even when they are used mainly internally.</p>
+<p>Presentation: <a href="https://docs.google.com/presentation/d/1gT5hXz1q0LdvdFi1mI8RON0ccrzUafckquN-3ssan_0/edit#slide=id.p">Online</a> | <a href="https://s3-eu-west-1.amazonaws.com/pyconil-data-amit/presentations/pied_pypier_pyconil_2018.pdf">File</a></p></bdi></div>
+
+            </div>
+            <div class="col-md-3">
+                
+                    
+
+
+
+
+<h4>Sponsors</h4>
+
+<div class="sponsor-list">
+  
+
+
+
+<div id="content_sponsor-top" class="content-box ">
+    
+    
+</div>
+
+  
+  <h3 style="margin-top: 3em;">
+    Friends of PyConIL
+    <i class="level-logo friends-of-pyconil"></i>
+  </h3>
+
+  <div style="margin: 10px 0;">
+    <a href="https://kaplanopensource.co.il/">
+      
+      <img src="data:image/png;base64,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" alt="Kaplan Open Source" />
+    </a>
+    <p>
+      
+    </p>
+  </div>
+</div>
+
+                
+            </div>
+        </div>
+    </main>
+
+
+        
+            <footer>
+                <div>
+                    
+    
+
+
+<div class="footer-logo"></div>
+<div class="pycon-footer">
+  Share:
+  <span class="fb-share-button" data-href="https://il.pycon.org/2018" data-layout="button" data-size="small" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fil.pycon.org%2F2018&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">share</a></span>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Pycon%20Israel">tweet</a>
+  <div>
+    Contact us: <a href="/cdn-cgi/l/email-protection#80e9eee6efc0f0f9e3efeeaeeff2e7aee9ec" class="envelope-icon"></a>
+      <a href="https://www.facebook.com/pyconisrael" class="fb-logo"></a>
+      <a href="https://twitter.com/pyconil" class="tweeter-logo"></a>
+  </div>
+  <div style="text-align: center;" class="copyright">&copy; 2022 PyCon Israel Team and contributors</div>
+  <div style="text-align: center;" class="powered-by">Site Powered by Eldarion's <a href="http://eldarion.com/symposion/">Symposion</a></div>
+  <div style="text-align: center;" class="powered-by">Site Designed by <a href="http://eldanet.com/">Eldanet.com</a></div>
+</div>
+
+
+                </div>
+            </footer>
+        
+
+        
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/2018/static/js/site.b424cc759b14.js"></script>
+    
+
+
+        
+    
+    
+
+    </body>
+</html>

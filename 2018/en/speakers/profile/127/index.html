@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en"  >
+    <head>
+        <meta charset="utf-8" />
+        <title>PyCon Israel | Yaacov Zamir</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+
+        
+    <link href="/2018/static/css/app.cf2a3cb107eb.css" rel="stylesheet" />
+
+
+        
+            <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <![endif]-->
+        
+
+        
+    <link rel="shortcut icon" href="/2018/static/images/favicon.876a1d7f017e.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2018/static/images/favicon-32x32.d1eb23190eb7.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2018/static/images/favicon-96x96.51ad1038f893.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2018/static/images/favicon-16x16.0c37aa64b2ca.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    
+
+    </head>
+    <body class="" id="" >
+        
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=171131396875691&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+  <header id="main-header">
+    <div id="header-extra"></div>
+    <h1 id="logo"><a href="/2018/en/">PyCon Israel 2018</a></h1>
+
+    <nav class="navbar navbar-expand-md navbar-topbar navbar-dark">
+      <div class="container">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav mr-auto">
+            
+            
+
+
+    <li class="nav-item  ">
+        <a href="/2018/en/" class="nav-link "  role="button">Home</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/blog/" class="nav-link "  role="button">Blog</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/code-of-conduct/" class="nav-link "  role="button">Code of Conduct</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/schedule/" class="nav-link "  role="button">Schedule</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/venue/" class="nav-link "  role="button">Venue</a>
+        
+    </li>
+
+
+            
+            
+          </ul>
+          
+          
+
+
+
+<ul class="navbar-nav">
+    
+        <li class="nav-item"><a class="nav-link" href="/2018/account/login/">Log in</a></li>
+        
+    
+</ul>
+
+<form id="accountLogOutForm" style="display: none;" action="/2018/account/logout/" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='3T4GSIYu65mNqmCG3pc6v4FMKHJ92356aPrJq9HeScHA9xkPAFJm7yKv4WEBIqVw' />
+</form>
+
+          
+
+<form action="/2018/i18n/setlang/" method="post" class="navbar-nav"><input type='hidden' name='csrfmiddlewaretoken' value='3T4GSIYu65mNqmCG3pc6v4FMKHJ92356aPrJq9HeScHA9xkPAFJm7yKv4WEBIqVw' />
+    
+    
+    
+    
+    
+      
+    
+      
+       <button name="language" value="he">עברית</button>
+      
+    
+</form>
+
+        </div>
+        
+      </div>
+    </nav>
+
+  </header>
+
+
+
+        
+    <main class="container">
+        <div id="content-section" class="row">
+            <div id="content-body" class="col-md-9">
+                
+    <div class="row">
+        <div class="col-md-2">
+            
+                
+                <img src="data:image/jpeg;base64,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" alt="Yaacov Zamir" />
+            
+        </div>
+        <div class="col-md-6">
+            
+            <h1>Yaacov Zamir</h1>
+            <div class="bio"><bdi><p>Yaacov is a software engineer at Red Hat, he is a long time contributor to free software projects, currently maintains the node-modbus-serial project, and like cats.</p></bdi></div>
+            
+            <h2>Presentations</h2>
+            
+                <h3><a href="/2018/schedule/presentation/35/">Raspberry pi as a home automation controller using pymodbus and node-red</a></h3>
+                
+                    <p>
+                        Tuesday
+                        10:20 a.m.&ndash;11 a.m.
+                        
+                            in
+                            Hall 2
+                        
+                    </p>
+                
+            
+        </div>
+    </div>
+
+            </div>
+            <div class="col-md-3">
+                
+                    
+
+
+
+
+<h4>Sponsors</h4>
+
+<div class="sponsor-list">
+  
+
+
+
+<div id="content_sponsor-top" class="content-box ">
+    
+    
+</div>
+
+  
+  <h3 style="margin-top: 3em;">
+    Diamond
+    <i class="level-logo diamond"></i>
+  </h3>
+
+  <div style="margin: 10px 0;">
+    <a href="https://twistbioscience.com/">
+      
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wgARCAAkAGQDASIAAhEBAxEB/8QAGwABAAIDAQEAAAAAAAAAAAAAAAIFAQMGBAf/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAfspTFy0aD3Oc6Mjjx++SGKi7kKG81qQFJdhS3EpPn/0BAp7vXiTju2hEqbvXstC0BEkxIMi0AAD/8QAIBAAAQQCAgMBAAAAAAAAAAAAAQACAwQFEhEgEBQiFf/aAAgBAQABBQLtsNm7JoIHOkfTJ3nUm13vkitWW13tzFd0a9lnvqtkDYlVzISV7TSS3xm4ZJ6CzcMs2Or4qxFeQhk/dTYJxeV+GSTIdPrbw4ng7cnZfXI3Q27NACa0BrQAO/8A/8QAGhEAAwEAAwAAAAAAAAAAAAAAAAEgERIxUf/aAAgBAwEBPwGM8jTo5GicJJT/AP/EABoRAAMAAwEAAAAAAAAAAAAAAAABERASIFH/2gAIAQIBAT8BzCecUbNjYTvES5//xAAvEAABAwEFBgQHAQAAAAAAAAABAgMRAAQQEhMhFCAjMUFRImFxoTAyQlJyc4GR/9oACAEBAAY/At7DOvOjJ9K+aalxQ8zuheyuuo0GJJToSY6mgtbSmlH6VESP8pgLB4rmWD2NPqQlaiy+GI+4kxpcbJhOMNZk9ImLuFZHywVFIe0jT+zFyGNheczDDZSpMK0nvQJGE9u1+W0nErMbMeixc4LOJfRDjX5JMirB4eCGwq0fsTMe6va5Vow8PZgjF54jc2qy2J+ynOxPHOGUpPXSevpdYHEJlLbiis9vARu8tL/CAa05RRuHvQneMCJrD086gcvgf//EACQQAQABAwMEAgMAAAAAAAAAAAERACExEEFhIHGRoTBRgbHB/9oACAEBAAE/IerZ1tnFAMZJwMFKhTlZatJA4DpRDKgwACAcpUhtJY8hKSLCBhBSfEfmk0BDEiB4S+nQS1RhuKHe2gMyI3UixuBJim5ejStClCTIiw5pmKAqzw1aLt07JfQ6TsYTgfoimHIaTc+S6L3ZmlaLR4dEo68khwqXsX0STP5ig9vSMoi2zN5oR0g1mTLtX139K2T2rJ39VuUpc7k9VnUksbtZXeSaBmAIA+D/2gAMAwEAAgADAAAAEONNHIsPLInnNnPPIwPPPPP/xAAdEQEAAgICAwAAAAAAAAAAAAABABEQIEFxITHw/9oACAEDAQE/EM0rb93PE0AYoLjThnVlnGUFuUlHrX//xAAeEQACAQMFAAAAAAAAAAAAAAABEQAQICExQWFx8P/aAAgBAgEBPxCrNn3cxFgNEBwpsYeBiGlSAS4FELf/xAAiEAEBAAMAAQQCAwAAAAAAAAABEQAhMUEQIFFxkcEwYYH/2gAIAQEAAT8Q9zBsJXvaX84hNrMGBp+W3GMQgmq6NeDBQakDZZzx7VXeOAugXYBC7c4ooYihVChdL3I5brr7bYvK7GFtlPutIpNsfSI1lxQZ1dm8knpqOxBbFhCdHxG4CAEfCYxm4g0y6OAc1dYw+YxRKpFKc0p6rxUAGx7Q0j/MOYGGmIKVFQ29k7gssC7DW7q7EvHwYcwaDmhSObbB5N+isMWhowoSJFFV03BigAApGtaBq99sHZL1qaT8ZQiMYxxgV8YVsNESnbfrBVYp38P1g53TxwKKSZz7YPEY7/P9Yd9qeHvj9+7qgZunXIVrI0SNtX7wXKgNAeP4P//Z" alt="Twist BioScience" />
+    </a>
+    <p>
+      We are Twist Bioscience and we make DNA. Yes, the DNA that makes up all living organisms. We are leading the innovation in DNA synthesis technology, providing the products that are changing the world for the better. Our customers in medicine, agriculture, industrial chemicals, and even data storage use our synthetic DNA products to develop revolutionary ways to create cures for cancer, and other diseases, as well as materials that help protect the environment and our planet.
+
+In our Software R&amp;D Center in Tel Aviv we are building the SW IDE framework, i.e. the software tools that enable genetic engineers to design and edit biological code and develop better bio-based products, faster and cheaper.
+
+We are a fast-growing startup, that has raised $260M, with a portfolio of global customers who are some of the biggest biotech companies. Our unique innovation is in how we combine advanced technology along with biochemistry, molecular biology, and software engineering. 
+If you are a SW developer or manager looking for a unique challenge and an unparalleled opportunity, we invite you to get in touch today.
+    </p>
+  </div>
+</div>
+
+                
+            </div>
+        </div>
+    </main>
+
+
+        
+            <footer>
+                <div>
+                    
+    
+
+
+<div class="footer-logo"></div>
+<div class="pycon-footer">
+  Share:
+  <span class="fb-share-button" data-href="https://il.pycon.org/2018" data-layout="button" data-size="small" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fil.pycon.org%2F2018&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">share</a></span>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Pycon%20Israel">tweet</a>
+  <div>
+    Contact us: <a href="/cdn-cgi/l/email-protection#caa3a4aca58abab3a9a5a4e4a5b8ade4a3a6" class="envelope-icon"></a>
+      <a href="https://www.facebook.com/pyconisrael" class="fb-logo"></a>
+      <a href="https://twitter.com/pyconil" class="tweeter-logo"></a>
+  </div>
+  <div style="text-align: center;" class="copyright">&copy; 2022 PyCon Israel Team and contributors</div>
+  <div style="text-align: center;" class="powered-by">Site Powered by Eldarion's <a href="http://eldarion.com/symposion/">Symposion</a></div>
+  <div style="text-align: center;" class="powered-by">Site Designed by <a href="http://eldanet.com/">Eldanet.com</a></div>
+</div>
+
+
+                </div>
+            </footer>
+        
+
+        
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/2018/static/js/site.b424cc759b14.js"></script>
+    
+
+
+        
+    
+    
+
+    </body>
+</html>

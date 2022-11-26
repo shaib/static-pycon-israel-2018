@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en"  >
+    <head>
+        <meta charset="utf-8" />
+        <title>PyCon Israel | Gal Cohen</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+
+        
+    <link href="/2018/static/css/app.cf2a3cb107eb.css" rel="stylesheet" />
+
+
+        
+            <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <![endif]-->
+        
+
+        
+    <link rel="shortcut icon" href="/2018/static/images/favicon.876a1d7f017e.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2018/static/images/favicon-32x32.d1eb23190eb7.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2018/static/images/favicon-96x96.51ad1038f893.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2018/static/images/favicon-16x16.0c37aa64b2ca.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    
+
+    </head>
+    <body class="" id="" >
+        
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=171131396875691&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+  <header id="main-header">
+    <div id="header-extra"></div>
+    <h1 id="logo"><a href="/2018/en/">PyCon Israel 2018</a></h1>
+
+    <nav class="navbar navbar-expand-md navbar-topbar navbar-dark">
+      <div class="container">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav mr-auto">
+            
+            
+
+
+    <li class="nav-item  ">
+        <a href="/2018/en/" class="nav-link "  role="button">Home</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/blog/" class="nav-link "  role="button">Blog</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/code-of-conduct/" class="nav-link "  role="button">Code of Conduct</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/schedule/" class="nav-link "  role="button">Schedule</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/venue/" class="nav-link "  role="button">Venue</a>
+        
+    </li>
+
+
+            
+            
+          </ul>
+          
+          
+
+
+
+<ul class="navbar-nav">
+    
+        <li class="nav-item"><a class="nav-link" href="/2018/account/login/">Log in</a></li>
+        
+    
+</ul>
+
+<form id="accountLogOutForm" style="display: none;" action="/2018/account/logout/" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='rFIpEVhmBwRaT1ob5iwUwH3UmqQWVpxVyB5scm06nDcXCc6kCy3a8b8DGFLoBMnl' />
+</form>
+
+          
+
+<form action="/2018/i18n/setlang/" method="post" class="navbar-nav"><input type='hidden' name='csrfmiddlewaretoken' value='rFIpEVhmBwRaT1ob5iwUwH3UmqQWVpxVyB5scm06nDcXCc6kCy3a8b8DGFLoBMnl' />
+    
+    
+    
+    
+    
+      
+    
+      
+       <button name="language" value="he">עברית</button>
+      
+    
+</form>
+
+        </div>
+        
+      </div>
+    </nav>
+
+  </header>
+
+
+
+        
+    <main class="container">
+        <div id="content-section" class="row">
+            <div id="content-body" class="col-md-9">
+                
+    <div class="row">
+        <div class="col-md-2">
+            
+                
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wgARCACAAGsDASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAABAUDBgABAgf/xAAZAQADAQEBAAAAAAAAAAAAAAABAgMEAAX/2gAMAwEAAhADEAAAAfZc8n9R5Z8zObMgrpFpyhGt1wwKVOIyDkEgEWpmVJKg4yzuElFhajIIQvZo5FYwihN88vaJP1oEQLzwzU1sN1ijG4bNIPIPqsxuPmjquu4Zrz8O3ACbNFusjhwyYSBmEV9k2PC14O5LHoggtlpf0FCe76nrox9srhz1AzXS+aOtcmOGONkc6aMX6czvq4Uuw2Mfg6JOi0q5z5gp+zS3Gi3shPVY0RlbMo3OjrqhGuktMBtL5SjbSBTbP6TnnjEJdbX5kyU0rOl/pY2EUeI+2C+WTuFcXCuPuWJ0k12M6MAS+WEU+tqdazrui7k5B1H3yDGXCaQ8qdgRERuVcdU//8QAJxAAAgICAgICAQQDAAAAAAAAAgMBBAARBRITIRAiFBUjMTIkMEH/2gAIAQEAAQUC/wBk4XhmeI5Y6zkuU0PhrlKF3N1RlnPz1q86g4r2kPX5laJoRnnVpzRPGzx8slWsVYaoafKdsdyPjx1ommRd89YQ7mo80ZxlwLS1eORsWEpZZZWauXLHJPCOJyJISY/92feVoLsVVsz+E3TImM49vjsrZ1LmZrLVL5F09pmNSOhzeske2VUi5sCNdZX4y3okWI8GGzTofoHl2NTVsz64ZRi49CJHJbiFsJZRyViR/AWXHN8gSv7E5ERZMvsOoyuMDnTeVIKZKOorScjZrGM2K3WVB9uLk35yFIysVqDSlyChkB2wOoAw5jDkiOnTheHGiCSnHAbZppFy1UViK4DzP/az8tJDcbPfxEQSlgj4e+Rwjygd+Jh/XZYsIifL0sk4uhWl0ytcsD4KW2SgZO2uqYVWVGzXClo48fWKu+R5EZS7bBEA92K8KFB/koJTZyUV14B+GtV+4KHeCAELFgLOhYkonl+R+72xqBgtuL/Ntd6lmo2vYV0pILkrXmlD1wUaIF/w727WBy4hZO4UkdlrIiC1xFhSbdquLgKk5JSNo8c0K+AW2dCjKfJGEfqU94588REkM+EchgxhyRQMeq123Vw+WtFDrdpkQGf9jcFJhJHrxwXp0wpQ5Exkz6Gc3OTPxM4P9sKMSWGPU/7HkwOfXPWan4n4rolgp4NzU/zEf1WYSAjER7nNZ0zURk/GvhLYWA8m8QnPU5E+v//EACIRAAICAgICAgMAAAAAAAAAAAABAgMREhAhE0ExUSAyQv/aAAgBAwEBPwFSzznmSb9cRyyMcnhl9HaGZ4rNrI/qWV2/0zT6NePHkhDDIU57HFNassgoISNeEUWj2fZe+sGDBmKPIiuO0MoVsl8ossFYjdCzLsUUhSa+B2SfvhpMTw9X+Sz7LqvIj//EACQRAAIBAwMEAwEAAAAAAAAAAAABAgMREgQhMRMiQVEQIGHB/9oACAECAQE/AfhJswZwXQpQ8sU2+SNPJl7GaKsc0fhgKJT9GMHyQlDwiUrijvcaRLdkXYcxGW5ycEZp7bjJ+xMXsysNlOnqHLu4/p0GyXY7MsvBCnkrEtM0dGQ7U9rbjm2OKfIqcUWFJokslkvszT1uk7s//8QANBAAAQMDAQUGBAUFAAAAAAAAAQACEQMSITETIkFRYRAyYnGBkSAjM0IEMFJysRQ0ocHR/9oACAEBAAY/AvzZlqO3L303a506oPpva4HtLqlRrQNZKhgc/rotyi0O6lfOFh6ZCvp1AQp2jVqu+jNQ0mxh0I/Vf12i19E2CW26Kyq6EQDujQyiajyVutUFwW6+Fh5UVH2uHeWarp81ZtHT1X9wrdm10cVlQsZVuYUysjClrVcVBTTgTgptJ9Rm8YwU0Nte6RmchOc1otnAWrlvj3XVT3TwQcXAFBtF1xCl4a7pcrWCm1WsYXOP33oPuu6OC4Z5KAOGZ4oOmB+lQ2car6rldp6rJwg6RCcLjJwQpYDPnCthq4N/EETP+kWue4EcC5QXJpOGmDKI1EoRxRDcc1M+yEndWGHnKm0oucfRC3QoRUPoxWvcfbVOIbjmRK75Lf2qjjnqjrrKiJ81lFwGOElb7gscFqnsAmGplwnCH8K1sC1TbKgYPJQMmDCLmzaEHEGCjPASg5xpyc99TBlAEH2THt44iE5+2YJA14K0EQ7OEGtOTxW8HPGtytotyePJNYGyefJOY37Wo0w5qY1pZqOKdtK9OkxwieSA2w0RoXODBwlVWtc6GugBUjf3+idP3mAixnebkKGuAe3mrTs/db9Vk+DJReBa1PqHV5whKOFpwHY9x8SqwNXlN0LQMKla2T3ls5DnHki9uhUOHsVNkuPMrY0zj+F/TaOAQ3pWOat5gLUp1ZtIumdSnOmJUGo4jkrj/lfOxcIDlwIKJovhQ+p7K0b1Tkrn5u1KmmY8lY/JHNXGmCvoM91hbznPPhW4wDzyt4z2RSqbv6XCQvpUPZQX2jwiFnslS6k0lXN9R2WA6a+ak/Dj4oPddqi3ksnAWAs9ufgNpEhCptqeRpBUcewTr+UWmkHT4iFYNP3O/wCqV1Wq/8QAJhABAAICAgICAQUBAQAAAAAAAQARITFBUWFxgaGRELHB0fAw4f/aAAgBAQABPyH/AKKiW6sXOoJc4rrgGZWI/qAhbVFTwpGiH3JzIyve3Q7Ypmk9zEoC1uDq39ZhkUleK5Bq/mOfJvW/iodUzqabjoxmULV9N4XzHDtFBfM8SBWObdvGYJ4Hi4D5/TG0v93UZIy8BvzAlLbgRB71CftBIIEEsx+YppFef1GrRvZzAqa1UoS+EYD0fcyIsxVkYZYm7qIUKGUIvhOIpCGdxnlmNRU0XuGXl1nbZwy3J4OaPUtEyPUvUb0VqNQUfYl8dIVcm1szcalmNlEHaFgVfiLBqVbtB5qJBw2o/glq9kXgfjmAhh4qr4g4pW5UNeMfb4lln909X0zxj5RG9CSi4WEDtsbmJrBuSVCK7GvqFFWHIrAqy5a5t5eOIEmFMGCivdxekFI4NzHh1hipN51fcIRZbt/LK+Z4VLDAN9MbBd0GFhg5X/eoCPfHPuNalF2wGzU2DpfuXxqF20+0Nchr+IlwotmBCGrVPSoQtXJNyoC5cqmZoj9R9a3KlqIUx0Y1ArI+kAdTqEkFgeZQEMMx4GiDlk0CXSVVtDqHtlWGNH9JoiN4Gpx/1ncU7Qvx6JS35s/qLSruKyytWozCxZKCGUErsRU0mWnsa3zAYobceYFGjiLbglTzCiO8TD+crMbi3zEO15v1/UuKizLj4i26rbfKVirAa8Q7fL+HvczN2Df3EsWVZHWaj4xhWrxVS33Bd3BOVmx53cmVFvVk+WB1vQUPZw4mm9mpzl4o5lNp4vN3Om68S2OhyTeoth/lRzVkE4igogw4zDykzCHFXxMib8kMIXuAbjWG4Jb2FuuEEt1LeKqaAQbGPdYveJa/iqeIN/ujzIUKdsOoTXVz3iRiKuY8sRk/GAzKmhGHcRqemZEpXCCtP0PLLDLXkl9905smvaKXVjlNSr5+819rbgIcXSBR9zCKdq0RLLi5ZWr8MItzjILf97jwL8SPv/1HUmG4e4bTNtpAiaGrLp/SZhOnnpNslsAUSx5lMIW4Fsrlyw+Jlebj3Bs1lCY4vsExZ5PthT++zlI40S+Bb1BN6OpgOiK4k7LAMKJFgLP9iJYtJurY3HMmE0LUsMam1bYJ3j1AOMRRzuMBLTCu39gyiIdcUG2m4BLVQYDhP//aAAwDAQACAAMAAAAQx0x010vc71+ql3pcQAgOsOPYAE+Bs/MHvueGZpFLmD5mbmUX1lRpyTNG/8QAIhEAAwABAwQDAQAAAAAAAAAAAAERIRAxQVFhcbGB0eHw/9oACAEDAQE/EFLo3DwKtHcSTuJwtnA94kPgDQtgpkG4OR9ESeN/0Hjdw8mmTilZPAqCzRKKovkqgQW0OtG72Guj4FjGVplOxLuNyutixiIsLquiQ1VmSM+hBMg6tvLHlopuouJ9mYW49rQ3QUyjM8d14/NFq7MC5CCrIf/EACQRAQACAgEDBAMBAAAAAAAAAAEAESExQVFhcRCRobHB0eHx/9oACAECAQE/EPTSxOJozuQxfsQCoyt4lRRDrQFrcG20IQzqM5Qggeh6YxKAdwZ+JZuPqJ2EExmMDMZwFl2mPHntKQa90KqmzwiOEdBCIghQePLvDHHPiHoH3FnLEGxgmLlP+x6J5Xo7V++YXS46GD4hNCaAhA9H4fsZW+JDr/T5uA8yokqAXmU4guFiT//EACUQAQACAgICAgMBAQEBAAAAAAEAESExQVFhcYGRobHB0fAw8f/aAAgBAQABPxCz/wBAsYF5Rk2vnbcZQAFrjIG78huDtebyPjZFAtagiWZGV4qCojsD0W/efxDQBVgleKqkZb8Ki/uKSCuKjY1dByMzikKkz1mCRpwVOLxW4rCi0WIvxD7yiVLlA1XxAEXZOb5eDMCtDZ7HeY0XiAChZE5JjVUcIhvpxGmbSLUxWaSZ6HylDmVEyzTryf2G+EO1xqOy19ev+YlCwRLM1zmUQroL1Nl+PEtLCAPC0U11NuqVT1W1WH3FjQxF0vRMGbaYbAwFh1M+ETRVKVTI/f8Akq/SMhVVv6jDKUqQH4de4+CzhdX5EoXWtpynXjxOa6o6zEhA2ZPdS6JVUf5FhSNCpXcywU+5hg6YGdUakjZ0ccxDipXSleNcbrniZwXA2hpVrWf5GHoji36mUgoKRTu9316lKVVVtpzgsq4JUpoll6u8N/7Kioy7AO/MsZsI0YyCjRe5SSxdQloaj0WsN0AWwZOIqyiAJxVVgbw37jDLLkW2WKUG4gKEpgJyFNV+oUewHlO13Zo7GnRE/fhsjGKN13BBpihfwZdmoKLLXGM8amcAABXJa5pxfncfZYMtBtHz+OZY90Kg8GKyc6jG31ihlQa2WEFkiMeO9iUv0L6EtvMV3B80A6ZdfEQ95cI/eTzKJR0WoD52V5gwgFjDj7os9wUEV2ccjpTi9xVAjPYbGDrd1MNmAmHR0esyrdryNnGLzFq0Gk5ADun6lk6YaOU7j6wFCNN6c3t/8hjmIYHR8KymISNtMKHlP8i2mbDB6bmNdhVHjw5JSzaZRq7p/YKbCiI9BrMuMXQK2qp2VN7NIy1fkz1HxiAMHF89+pYEpmlEHOq+KiAxoDcGlxZUfWSmGxur09wMmG87xCjTwAq5c5ZNi1R2g/iM1ZotZWE/kwx3w+McQdAvZszL8bRCjb5ojJ6tGj4lFLBjaKx/DuFx4xXnPN7TMBnpGHzMGS6d9QZb0RsGzy41BzEgDQghV6QTmP1k5nIF9xWeIVzFGPKfyVQjLgtq3r3vED5YBQLpz5iDQbKV6qxS5+WUpq1uCGV/2YJtyplabDNTGeBaD27ZrpoSt8Xsd1L98FihoX+5cnNte1ehqMmwBzASvtMomxQejWVxshrBS0yAB/ExsgWXWf3P8i81IVSuUW5iOqb5WWjzKsfHxAsU9y4oLgWopGqM3D7bScjnXSRgOtV0HxTKUcyNrrg+CWVZQ1T7eVe2UrKFeGwr23NqjqQRxSFfAOmUsGaxht8GK9wUFpGHIqXDNgNAUfMF+QPFWJYlC1igDjhtjqWSpQs569sdngAALFshVe4XMqQum9xFSMZB7ZsoBbyM4j3qAYo6TzF92NTJar4QzGGKCmbb8eJeadilmyo3gWWHAefiAWrwZmDENM4Cbstob4xHFbTVatF9XKt1pUHwRMhHNP2Wpi9LfF2zdcKBZ0cRDZABROEevJF8R5kfklMb0Cprq51Za1i7f5t8RVK4s7O04fWotvhenjnGoPc2Y29iWMBHlK0LV33FXHFbv2ytiwlSh2vBGBpdD78n6hPp6H3j8SsSslrwdfEqahziz2PEwSXC+K7D4qbFHIz8YTfnw1vFmfzCNyW222vbHRuNR21usDTcxNCyJ9CBNiBRIsmXKJ3GD8uvMB6hk9XoSyxW5rXiUx+2HQyOCVqob4hRaA5GAkIb6PcwbKOeD1NArBd0JRYVhmJvI9MZkb+4ezyOZfDsDQSsMoQHDb52ESx+EgUzJ0VEABnxuJNeMbm/OIOfuVXA6CJoYNRawW/qPhUG2WPN/wAjAhOSq8aAbRF7kHcYeIn7iQeBUFaxApTDbGlFdnBKaGQhieTaV4naLxT7gQuXxqBdN46h6u/E2huSMUGKw3mESsqpbLoHKvyxr4L3CaUKa5j9Q4Vc/9k=" alt="Gal Cohen" />
+            
+        </div>
+        <div class="col-md-6">
+            
+            <h1>Gal Cohen</h1>
+            <div class="bio"><bdi><p>Software Engineer at cisco Shadow IT core team
+Owns a blog regarding dockerisation solutions for python
+https://galnevis.wixsite.com/website</p></bdi></div>
+            
+            <h2>Presentations</h2>
+            
+                <h3><a href="/2018/schedule/presentation/26/">Boosting development in a containerised microservices environment</a></h3>
+                
+                    <p>
+                        Monday
+                        11:30 a.m.&ndash;noon
+                        
+                            in
+                            Hall 2
+                        
+                    </p>
+                
+            
+        </div>
+    </div>
+
+            </div>
+            <div class="col-md-3">
+                
+                    
+
+
+
+
+<h4>Sponsors</h4>
+
+<div class="sponsor-list">
+  
+
+
+
+<div id="content_sponsor-top" class="content-box ">
+    
+    
+</div>
+
+  
+  <h3 style="margin-top: 3em;">
+    Silver
+    <i class="level-logo silver"></i>
+  </h3>
+
+  <div style="margin: 10px 0;">
+    <a href="http://www.allegro.ai/">
+      
+      <img src="data:image/jpeg;base64,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" alt="Allegro" />
+    </a>
+    <p>
+      Allegro.ai is a pioneering deep learning computer vision platform that
+provides a complete product lifecycle management solution for AI
+development &amp; production, starting with computer vision. The company’s
+platform simplifies the process of developing and managing deep learning
+powered solutions - such as for autonomous vehicles, robotics, security
+cameras, logistics and others.
+
+For more information, visit http://www.allegro.ai.
+    </p>
+  </div>
+</div>
+
+                
+            </div>
+        </div>
+    </main>
+
+
+        
+            <footer>
+                <div>
+                    
+    
+
+
+<div class="footer-logo"></div>
+<div class="pycon-footer">
+  Share:
+  <span class="fb-share-button" data-href="https://il.pycon.org/2018" data-layout="button" data-size="small" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fil.pycon.org%2F2018&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">share</a></span>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Pycon%20Israel">tweet</a>
+  <div>
+    Contact us: <a href="/cdn-cgi/l/email-protection#b4dddad2dbf4c4cdd7dbda9adbc6d39addd8" class="envelope-icon"></a>
+      <a href="https://www.facebook.com/pyconisrael" class="fb-logo"></a>
+      <a href="https://twitter.com/pyconil" class="tweeter-logo"></a>
+  </div>
+  <div style="text-align: center;" class="copyright">&copy; 2022 PyCon Israel Team and contributors</div>
+  <div style="text-align: center;" class="powered-by">Site Powered by Eldarion's <a href="http://eldarion.com/symposion/">Symposion</a></div>
+  <div style="text-align: center;" class="powered-by">Site Designed by <a href="http://eldanet.com/">Eldanet.com</a></div>
+</div>
+
+
+                </div>
+            </footer>
+        
+
+        
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/2018/static/js/site.b424cc759b14.js"></script>
+    
+
+
+        
+    
+    
+
+    </body>
+</html>

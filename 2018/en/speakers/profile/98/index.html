@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en"  >
+    <head>
+        <meta charset="utf-8" />
+        <title>PyCon Israel | Raphael Cohen</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+
+        
+    <link href="/2018/static/css/app.cf2a3cb107eb.css" rel="stylesheet" />
+
+
+        
+            <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <![endif]-->
+        
+
+        
+    <link rel="shortcut icon" href="/2018/static/images/favicon.876a1d7f017e.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2018/static/images/favicon-32x32.d1eb23190eb7.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2018/static/images/favicon-96x96.51ad1038f893.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2018/static/images/favicon-16x16.0c37aa64b2ca.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    
+
+    </head>
+    <body class="" id="" >
+        
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=171131396875691&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+  <header id="main-header">
+    <div id="header-extra"></div>
+    <h1 id="logo"><a href="/2018/en/">PyCon Israel 2018</a></h1>
+
+    <nav class="navbar navbar-expand-md navbar-topbar navbar-dark">
+      <div class="container">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav mr-auto">
+            
+            
+
+
+    <li class="nav-item  ">
+        <a href="/2018/en/" class="nav-link "  role="button">Home</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/blog/" class="nav-link "  role="button">Blog</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/code-of-conduct/" class="nav-link "  role="button">Code of Conduct</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/schedule/" class="nav-link "  role="button">Schedule</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/venue/" class="nav-link "  role="button">Venue</a>
+        
+    </li>
+
+
+            
+            
+          </ul>
+          
+          
+
+
+
+<ul class="navbar-nav">
+    
+        <li class="nav-item"><a class="nav-link" href="/2018/account/login/">Log in</a></li>
+        
+    
+</ul>
+
+<form id="accountLogOutForm" style="display: none;" action="/2018/account/logout/" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='5CjUbONYT2l2GzBx89O2z3s5VGAlUVUlcyGXJfwIF9GPpKjGFplibxxOfVvNAiKL' />
+</form>
+
+          
+
+<form action="/2018/i18n/setlang/" method="post" class="navbar-nav"><input type='hidden' name='csrfmiddlewaretoken' value='5CjUbONYT2l2GzBx89O2z3s5VGAlUVUlcyGXJfwIF9GPpKjGFplibxxOfVvNAiKL' />
+    
+    
+    
+    
+    
+      
+    
+      
+       <button name="language" value="he">עברית</button>
+      
+    
+</form>
+
+        </div>
+        
+      </div>
+    </nav>
+
+  </header>
+
+
+
+        
+    <main class="container">
+        <div id="content-section" class="row">
+            <div id="content-body" class="col-md-9">
+                
+    <div class="row">
+        <div class="col-md-2">
+            
+                
+                <img src="data:image/jpeg;base64,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" alt="Raphael Cohen" />
+            
+        </div>
+        <div class="col-md-6">
+            
+            <h1>Raphael Cohen</h1>
+            <div class="bio"><bdi><p>Raphael is the Head of Reseach at Chorus where he applies state of the art Natural Language Processing, and Speech Analysis algorithms for extracting insights and enriching our customer's calls. Before Chorus he worked in EMC as a principal data scientist finding innovative business solutions based on the organization's big data in areas such as Customer Success and predicting hard-drive failures. Raphael has a PhD in CS from Ben-Gurion University in the topic of NLP for Medical Hebrew under Prof Michael Elhadad and MSc in Genetics under Prof Ohad Birk.</p></bdi></div>
+            
+                <p>Twitter: <a href="https://twitter.com/cohenrap">@cohenrap</a></p>
+            
+            <h2>Presentations</h2>
+            
+                <h3><a href="/2018/schedule/presentation/46/">Conversation Intelligence: Extracting Insights from Conversations</a></h3>
+                
+                    <p>
+                        Tuesday
+                        3:30 p.m.&ndash;4 p.m.
+                        
+                            in
+                            Hall 2
+                        
+                    </p>
+                
+            
+        </div>
+    </div>
+
+            </div>
+            <div class="col-md-3">
+                
+                    
+
+
+
+
+<h4>Sponsors</h4>
+
+<div class="sponsor-list">
+  
+
+
+
+<div id="content_sponsor-top" class="content-box ">
+    
+    
+</div>
+
+  
+  <h3 style="margin-top: 3em;">
+    Silver
+    <i class="level-logo silver"></i>
+  </h3>
+
+  <div style="margin: 10px 0;">
+    <a href="http://www.allegro.ai/">
+      
+      <img src="data:image/jpeg;base64,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" alt="Allegro" />
+    </a>
+    <p>
+      Allegro.ai is a pioneering deep learning computer vision platform that
+provides a complete product lifecycle management solution for AI
+development &amp; production, starting with computer vision. The company’s
+platform simplifies the process of developing and managing deep learning
+powered solutions - such as for autonomous vehicles, robotics, security
+cameras, logistics and others.
+
+For more information, visit http://www.allegro.ai.
+    </p>
+  </div>
+</div>
+
+                
+            </div>
+        </div>
+    </main>
+
+
+        
+            <footer>
+                <div>
+                    
+    
+
+
+<div class="footer-logo"></div>
+<div class="pycon-footer">
+  Share:
+  <span class="fb-share-button" data-href="https://il.pycon.org/2018" data-layout="button" data-size="small" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fil.pycon.org%2F2018&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">share</a></span>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Pycon%20Israel">tweet</a>
+  <div>
+    Contact us: <a href="/cdn-cgi/l/email-protection#a2cbccc4cde2d2dbc1cdcc8ccdd0c58ccbce" class="envelope-icon"></a>
+      <a href="https://www.facebook.com/pyconisrael" class="fb-logo"></a>
+      <a href="https://twitter.com/pyconil" class="tweeter-logo"></a>
+  </div>
+  <div style="text-align: center;" class="copyright">&copy; 2022 PyCon Israel Team and contributors</div>
+  <div style="text-align: center;" class="powered-by">Site Powered by Eldarion's <a href="http://eldarion.com/symposion/">Symposion</a></div>
+  <div style="text-align: center;" class="powered-by">Site Designed by <a href="http://eldanet.com/">Eldanet.com</a></div>
+</div>
+
+
+                </div>
+            </footer>
+        
+
+        
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/2018/static/js/site.b424cc759b14.js"></script>
+    
+
+
+        
+    
+    
+
+    </body>
+</html>

@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en"  >
+    <head>
+        <meta charset="utf-8" />
+        <title>PyCon Israel | Presentation: Advanced Celery Tricks - How we adapted and extended Celery to fit our data pipeline</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+
+        
+    <link href="/2018/static/css/app.cf2a3cb107eb.css" rel="stylesheet" />
+
+
+        
+            <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <![endif]-->
+        
+
+        
+    <link rel="shortcut icon" href="/2018/static/images/favicon.876a1d7f017e.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2018/static/images/favicon-32x32.d1eb23190eb7.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2018/static/images/favicon-96x96.51ad1038f893.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2018/static/images/favicon-16x16.0c37aa64b2ca.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    
+
+    </head>
+    <body class="" id="" >
+        
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=171131396875691&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+  <header id="main-header">
+    <div id="header-extra"></div>
+    <h1 id="logo"><a href="/2018/en/">PyCon Israel 2018</a></h1>
+
+    <nav class="navbar navbar-expand-md navbar-topbar navbar-dark">
+      <div class="container">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav mr-auto">
+            
+            
+
+
+    <li class="nav-item  ">
+        <a href="/2018/en/" class="nav-link "  role="button">Home</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/blog/" class="nav-link "  role="button">Blog</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/code-of-conduct/" class="nav-link "  role="button">Code of Conduct</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/schedule/" class="nav-link "  role="button">Schedule</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/venue/" class="nav-link "  role="button">Venue</a>
+        
+    </li>
+
+
+            
+            
+          </ul>
+          
+          
+
+
+
+<ul class="navbar-nav">
+    
+        <li class="nav-item"><a class="nav-link" href="/2018/account/login/">Log in</a></li>
+        
+    
+</ul>
+
+<form id="accountLogOutForm" style="display: none;" action="/2018/account/logout/" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='qEyu10UBAI0VqJ1awmEK3y44oCIU8gdVxAVxzrDlmPlI9UJj3Cb0F29NIRDmOD3l' />
+</form>
+
+          
+
+<form action="/2018/i18n/setlang/" method="post" class="navbar-nav"><input type='hidden' name='csrfmiddlewaretoken' value='qEyu10UBAI0VqJ1awmEK3y44oCIU8gdVxAVxzrDlmPlI9UJj3Cb0F29NIRDmOD3l' />
+    
+    
+    
+    
+    
+      
+    
+      
+       <button name="language" value="he">עברית</button>
+      
+    
+</form>
+
+        </div>
+        
+      </div>
+    </nav>
+
+  </header>
+
+
+
+        
+    <main class="container">
+        <div id="content-section" class="row">
+            <div id="content-body" class="col-md-9">
+                
+    
+        <h4>
+            Tuesday
+            2:30 p.m.&ndash;3 p.m.
+            
+                in
+                Main Hall
+            
+        </h4>
+    
+    <h2>Advanced Celery Tricks - How we adapted and extended Celery to fit our data pipeline</h2>
+
+    <h4>
+        
+            <a href="/2018/en/speakers/profile/57/">Itamar Hartstein</a>
+    </h4>
+
+    <dl class="dl-horizontal">
+        <dt>Audience level:</dt>
+        <dd style="margin-bottom: 0;">Intermediate</dd>
+    </dl>
+
+    <h3>Abstract</h3>
+
+    <div class="abstract"><bdi><p>In Singular, we have a data pipeline which consists of hundreds of thousands of daily tasks, in varying length (from less than a second to hours per task), and with complex dependencies between them. In addition, we integrate with hundreds of third-party providers, which means that tasks are not necessarily reliable / predictable, 
+so we need to be robust to failures and delays and be able to monitor them easily.
+We found Celery to be highly suitable to our needs as a task infrastructure, especially due to its distributed nature, its support for various workflows and its modular design. In particular, the fact that it is compatible with multiple technologies for conveying messages ("brokers") and storing results ("backends") greatly appealed to us.</p>
+<p>It wasn't an immediate fit however. We needed to extend Celery so it will fit our use cases:
+(1) We implemented a custom backend and a custom serialization method.
+(2) We tweaked the behavior of Celery's workflows (chains, groups and chords).
+(3) We needed to be able to update code easily without restarting workers.
+(4) and more..</p>
+<p>In this session we will discuss how we adapted Celery to our needs, as well as tools we developed for working with it better, and various advanced tips &amp; tricks.</p>
+<p>Presentation: <a href="https://s3-eu-west-1.amazonaws.com/pyconil-data-amit/presentations/Itamar_Hartstein_Celery+-+PyCon+Presentation.pdf">File</a> | <a href="https://docs.google.com/presentation/d/1Irb-1NoHMxy3gWyVVdx40zxuxbZtUekXhYQ1wdAsauU">Online</a></p></bdi></div>
+
+            </div>
+            <div class="col-md-3">
+                
+                    
+
+
+
+
+<h4>Sponsors</h4>
+
+<div class="sponsor-list">
+  
+
+
+
+<div id="content_sponsor-top" class="content-box ">
+    
+    
+</div>
+
+  
+  <h3 style="margin-top: 3em;">
+    Friends of PyConIL
+    <i class="level-logo friends-of-pyconil"></i>
+  </h3>
+
+  <div style="margin: 10px 0;">
+    <a href="https://mobility.here.com">
+      
+      <img src="data:image/png;base64,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" alt="Here" />
+    </a>
+    <p>
+      
+    </p>
+  </div>
+</div>
+
+                
+            </div>
+        </div>
+    </main>
+
+
+        
+            <footer>
+                <div>
+                    
+    
+
+
+<div class="footer-logo"></div>
+<div class="pycon-footer">
+  Share:
+  <span class="fb-share-button" data-href="https://il.pycon.org/2018" data-layout="button" data-size="small" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fil.pycon.org%2F2018&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">share</a></span>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Pycon%20Israel">tweet</a>
+  <div>
+    Contact us: <a href="/cdn-cgi/l/email-protection#d6bfb8b0b996a6afb5b9b8f8b9a4b1f8bfba" class="envelope-icon"></a>
+      <a href="https://www.facebook.com/pyconisrael" class="fb-logo"></a>
+      <a href="https://twitter.com/pyconil" class="tweeter-logo"></a>
+  </div>
+  <div style="text-align: center;" class="copyright">&copy; 2022 PyCon Israel Team and contributors</div>
+  <div style="text-align: center;" class="powered-by">Site Powered by Eldarion's <a href="http://eldarion.com/symposion/">Symposion</a></div>
+  <div style="text-align: center;" class="powered-by">Site Designed by <a href="http://eldanet.com/">Eldanet.com</a></div>
+</div>
+
+
+                </div>
+            </footer>
+        
+
+        
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/2018/static/js/site.b424cc759b14.js"></script>
+    
+
+
+        
+    
+    
+
+    </body>
+</html>

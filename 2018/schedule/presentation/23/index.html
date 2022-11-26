@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en"  >
+    <head>
+        <meta charset="utf-8" />
+        <title>PyCon Israel | Presentation: Value Driven Threat Modeling - Security by Design</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+
+        
+    <link href="/2018/static/css/app.cf2a3cb107eb.css" rel="stylesheet" />
+
+
+        
+            <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <![endif]-->
+        
+
+        
+    <link rel="shortcut icon" href="/2018/static/images/favicon.876a1d7f017e.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2018/static/images/favicon-32x32.d1eb23190eb7.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2018/static/images/favicon-96x96.51ad1038f893.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2018/static/images/favicon-16x16.0c37aa64b2ca.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    
+
+    </head>
+    <body class="" id="" >
+        
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=171131396875691&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+  <header id="main-header">
+    <div id="header-extra"></div>
+    <h1 id="logo"><a href="/2018/en/">PyCon Israel 2018</a></h1>
+
+    <nav class="navbar navbar-expand-md navbar-topbar navbar-dark">
+      <div class="container">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav mr-auto">
+            
+            
+
+
+    <li class="nav-item  ">
+        <a href="/2018/en/" class="nav-link "  role="button">Home</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/blog/" class="nav-link "  role="button">Blog</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/code-of-conduct/" class="nav-link "  role="button">Code of Conduct</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/schedule/" class="nav-link "  role="button">Schedule</a>
+        
+    </li>
+
+    <li class="nav-item  ">
+        <a href="/2018/en/venue/" class="nav-link "  role="button">Venue</a>
+        
+    </li>
+
+
+            
+            
+          </ul>
+          
+          
+
+
+
+<ul class="navbar-nav">
+    
+        <li class="nav-item"><a class="nav-link" href="/2018/account/login/">Log in</a></li>
+        
+    
+</ul>
+
+<form id="accountLogOutForm" style="display: none;" action="/2018/account/logout/" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='RjsEJSzjow6twYNujhSkZBQZ1dfTigO3YfPHhji3aDrgf9vDQxpAB5VIlsalYDEt' />
+</form>
+
+          
+
+<form action="/2018/i18n/setlang/" method="post" class="navbar-nav"><input type='hidden' name='csrfmiddlewaretoken' value='RjsEJSzjow6twYNujhSkZBQZ1dfTigO3YfPHhji3aDrgf9vDQxpAB5VIlsalYDEt' />
+    
+    
+    
+    
+    
+      
+    
+      
+       <button name="language" value="he">עברית</button>
+      
+    
+</form>
+
+        </div>
+        
+      </div>
+    </nav>
+
+  </header>
+
+
+
+        
+    <main class="container">
+        <div id="content-section" class="row">
+            <div id="content-body" class="col-md-9">
+                
+    
+        <h4>
+            Monday
+            11:30 a.m.&ndash;noon
+            
+                in
+                Main Hall
+            
+        </h4>
+    
+    <h2>Value Driven Threat Modeling - Security by Design</h2>
+
+    <h4>
+        
+            <a href="/2018/en/speakers/profile/21/">Avi Douglen</a>
+    </h4>
+
+    <dl class="dl-horizontal">
+        <dt>Audience level:</dt>
+        <dd style="margin-bottom: 0;">Intermediate</dd>
+    </dl>
+
+    <h3>Abstract</h3>
+
+    <div class="abstract"><bdi><p>Threat Modeling is a great method to identify potential security weaknesses, and is an important part of any secure design. A threat model can help analyze how to best protect your assets, prevent attacks, harden your systems, and efficiently prioritize security investment. Regardless of programming language, threat modeling provides a far greater return than most any other security technique in the development process. Therefore, threat modeling should be an early priority in application design process. Unfortunately, it is common knowledge that building a full threat model is always heavily resource intensive, requires a full team of expensive security professionals, takes up far too much developer time, and does not scale at all. </p>
+<p>But the common knowledge is wrong! In fact, this is not at all necessary, and should not be an excuse to avoid building a robust system. Using a value-driven approach, skilled development teams can very efficiently ensure that the features they build can protect themselves, the application, and the business value that the features were created for. Value Driven Threat Modeling offers an alternative to top-heavy, big-model-up-front threat modeling that security pros love, in favor of agility, speed, and developer independence. </p>
+<p>This talk will describe Value Driven Threat Modeling, and show how to incorporate it into your existing agile development. We will discuss how developers can efficiently produce and leverage a threat model to improve application development, and walkthrough some example scenarios. If you want to be a good developer in 2018, you need to prepare for the threats of 2020!</p>
+<p>Presentation: <a href="https://bouncesecurity.sharepoint.com/:p:/g/ESUo-aC59CtDiuYR1zvUV9kBTgFq-9zIBI8sRZny1SOS-g?e=dV9OOL">Online</a> | <a href="https://s3-eu-west-1.amazonaws.com/pyconil-data-amit/presentations/Value+driven+threat+modeling+-+Developers.pdf">File</a></p></bdi></div>
+
+            </div>
+            <div class="col-md-3">
+                
+                    
+
+
+
+
+<h4>Sponsors</h4>
+
+<div class="sponsor-list">
+  
+
+
+
+<div id="content_sponsor-top" class="content-box ">
+    
+    
+</div>
+
+  
+  <h3 style="margin-top: 3em;">
+    Silver
+    <i class="level-logo silver"></i>
+  </h3>
+
+  <div style="margin: 10px 0;">
+    <a href="http://otonomo.io">
+      
+      <img src="data:image/png;base64,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" alt="Otonomo" />
+    </a>
+    <p>
+      Otonomo is the first neutral automotive data services platform that paves the way for the development of new apps and services for drivers, passengers, municipalities, and transportation companies. Our platform ingests automotive data from multiple sources, including OEMs and other data providers. It secures, cleanses, normalizes, aggregates, and enriches it with third-party datasets in order to meet consumers’ privacy expectations, manage compliance, and maximize its value through our global Marketplace. There are over 75 partners in our ecosystem whose goal is to provide services such as preventive maintenance, public safety, parking, on-demand fueling, in-vehicle delivery, smart city, and other services.
+    </p>
+  </div>
+</div>
+
+                
+            </div>
+        </div>
+    </main>
+
+
+        
+            <footer>
+                <div>
+                    
+    
+
+
+<div class="footer-logo"></div>
+<div class="pycon-footer">
+  Share:
+  <span class="fb-share-button" data-href="https://il.pycon.org/2018" data-layout="button" data-size="small" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fil.pycon.org%2F2018&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">share</a></span>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Pycon%20Israel">tweet</a>
+  <div>
+    Contact us: <a href="/cdn-cgi/l/email-protection#b3daddd5dcf3c3cad0dcdd9ddcc1d49ddadf" class="envelope-icon"></a>
+      <a href="https://www.facebook.com/pyconisrael" class="fb-logo"></a>
+      <a href="https://twitter.com/pyconil" class="tweeter-logo"></a>
+  </div>
+  <div style="text-align: center;" class="copyright">&copy; 2022 PyCon Israel Team and contributors</div>
+  <div style="text-align: center;" class="powered-by">Site Powered by Eldarion's <a href="http://eldarion.com/symposion/">Symposion</a></div>
+  <div style="text-align: center;" class="powered-by">Site Designed by <a href="http://eldanet.com/">Eldanet.com</a></div>
+</div>
+
+
+                </div>
+            </footer>
+        
+
+        
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/2018/static/js/site.b424cc759b14.js"></script>
+    
+
+
+        
+    
+    
+
+    </body>
+</html>
